@@ -11,10 +11,10 @@ Ce projet étudiant vise à créer une page web dédiée à la visualisation de 
 
 # Concept de Datalivz
 
-Ce site sera dédiée à l'évolution de l'espérance de vie dans le monde. 
+Ce site sera dédiée à l'évolution de la fréquentation des cinémas dans le monde et particulièrement en France. 
 
 
 # Visite 
 
-Le lien vers le site : https://cecilepn.github.io/datalivz/ 
+Le lien vers le site : https://cecilepn.github.io/cineviz/ 
 
