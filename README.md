@@ -12,7 +12,7 @@ Ce projet étudiant vise à créer une page web dédiée à la visualisation de 
 # Concept de Cinéviz
 
 Ce site sera dédiée à l'évolution de la fréquentation des cinémas dans le monde et particulièrement en France depuis les années 40. 
-La visualisation 
+Une visualisation des box-offices à l'échelle mondiale sera également présente. 
 
 
 # Visite 
