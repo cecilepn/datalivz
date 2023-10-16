@@ -1,1 +1,47 @@
-x
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.logo {
+    width: 50px;
+    height: 100%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.titre {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(144deg, rgba(0, 0, 0, 0.9738489145658263) 0%, rgba(255, 66, 0, 1) 14%, rgba(0, 0, 0, 0.8169861694677871) 40%, rgba(0, 0, 0, 0.6853335084033614) 55%, rgba(255, 66, 0, 1) 78%);
+
+}
+
+h1 {
+    color: #FFD203;
+    font-size: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+
+p {
+    color: #FFD203;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.prez {
+    font-size: 1.7em;
+    font-weight: 600;
+}
