@@ -19,8 +19,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(144deg, rgba(0, 0, 0, 0.9738489145658263) 0%, rgba(255, 66, 0, 1) 14%, rgba(0, 0, 0, 0.8169861694677871) 40%, rgba(0, 0, 0, 0.6853335084033614) 55%, rgba(255, 66, 0, 1) 78%);
-
+    background: linear-gradient(144deg, rgba(255, 66, 0, 1) 14%, rgba(0, 0, 0, 0.8169861694677871) 37%, rgba(0, 0, 0, 0.6853335084033614) 60%, rgba(255, 66, 0, 1) 78%);
 }
 
 h1 {

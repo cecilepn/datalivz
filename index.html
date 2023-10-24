@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cineviz</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
 
+    <link rel="stylesheet" href="./style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
         rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
 </head>
 
 <body>
     <div>
-        <img src="img/logo.png" alt="" class="logo">
+        <img src="img/logo.svg" alt="" class="logo">
     </div>
 
     <section class="titre">
@@ -23,6 +28,13 @@
 
     </section>
 
+    <section class="frequentation">
+        <h2> Nombre d'entrées par année </h2>
+
+        <div><canvas id="graph1"></canvas></div>
+        <script type="module" src="./script.js"></script>
+
+    </section>
 
 
 

@@ -1,0 +1,322 @@
+[
+  {
+    "annee": 1943,
+    "entrees": 304.5
+  },
+  {
+    "annee": 1944,
+    "entrees": 245.4
+  },
+  {
+    "annee": 1945,
+    "entrees": 402
+  },
+  {
+    "annee": 1946,
+    "entrees": 369
+  },
+  {
+    "annee": 1947,
+    "entrees": 423.7
+  },
+  {
+    "annee": 1948,
+    "entrees": 402
+  },
+  {
+    "annee": 1949,
+    "entrees": 387.7
+  },
+  {
+    "annee": 1950,
+    "entrees": 370.7
+  },
+  {
+    "annee": 1951,
+    "entrees": 372.8
+  },
+  {
+    "annee": 1952,
+    "entrees": 359.6
+  },
+  {
+    "annee": 1953,
+    "entrees": 370.6
+  },
+  {
+    "annee": 1954,
+    "entrees": 382.8
+  },
+  {
+    "annee": 1955,
+    "entrees": 394.8
+  },
+  {
+    "annee": 1956,
+    "entrees": 398.8
+  },
+  {
+    "annee": 1957,
+    "entrees": 411.6
+  },
+  {
+    "annee": 1958,
+    "entrees": 371
+  },
+  {
+    "annee": 1959,
+    "entrees": 353.7
+  },
+  {
+    "annee": 1960,
+    "entrees": 354.6
+  },
+  {
+    "annee": 1961,
+    "entrees": 328.3
+  },
+  {
+    "annee": 1962,
+    "entrees": 311.7
+  },
+  {
+    "annee": 1963,
+    "entrees": 291.2
+  },
+  {
+    "annee": 1964,
+    "entrees": 275.8
+  },
+  {
+    "annee": 1965,
+    "entrees": 259.1
+  },
+  {
+    "annee": 1966,
+    "entrees": 234.2
+  },
+  {
+    "annee": 1967,
+    "entrees": 211.5
+  },
+  {
+    "annee": 1968,
+    "entrees": 203.2
+  },
+  {
+    "annee": 1969,
+    "entrees": 183.9
+  },
+  {
+    "annee": 1970,
+    "entrees": 184.4
+  },
+  {
+    "annee": 1971,
+    "entrees": 177
+  },
+  {
+    "annee": 1972,
+    "entrees": 184.4
+  },
+  {
+    "annee": 1973,
+    "entrees": 176
+  },
+  {
+    "annee": 1974,
+    "entrees": 179.4
+  },
+  {
+    "annee": 1975,
+    "entrees": 181.7
+  },
+  {
+    "annee": 1976,
+    "entrees": 177.3
+  },
+  {
+    "annee": 1977,
+    "entrees": 170.3
+  },
+  {
+    "annee": 1978,
+    "entrees": 178.5
+  },
+  {
+    "annee": 1979,
+    "entrees": 178.1
+  },
+  {
+    "annee": 1980,
+    "entrees": 175.4
+  },
+  {
+    "annee": 1981,
+    "entrees": 189.2
+  },
+  {
+    "annee": 1982,
+    "entrees": 201.9
+  },
+  {
+    "annee": 1983,
+    "entrees": 198.9
+  },
+  {
+    "annee": 1984,
+    "entrees": 190.9
+  },
+  {
+    "annee": 1985,
+    "entrees": 175.1
+  },
+  {
+    "annee": 1986,
+    "entrees": 168.1
+  },
+  {
+    "annee": 1987,
+    "entrees": 136.9
+  },
+  {
+    "annee": 1988,
+    "entrees": 124.7
+  },
+  {
+    "annee": 1989,
+    "entrees": 120.9
+  },
+  {
+    "annee": 1990,
+    "entrees": 121.9
+  },
+  {
+    "annee": 1991,
+    "entrees": 117.5
+  },
+  {
+    "annee": 1992,
+    "entrees": 116
+  },
+  {
+    "annee": 1993,
+    "entrees": 132.7
+  },
+  {
+    "annee": 1994,
+    "entrees": 124.4
+  },
+  {
+    "annee": 1995,
+    "entrees": 130.2
+  },
+  {
+    "annee": 1996,
+    "entrees": 136.7
+  },
+  {
+    "annee": 1997,
+    "entrees": 149.3
+  },
+  {
+    "annee": 1998,
+    "entrees": 170.6
+  },
+  {
+    "annee": 1999,
+    "entrees": 153.6
+  },
+  {
+    "annee": 2000,
+    "entrees": 165.8
+  },
+  {
+    "annee": 2001,
+    "entrees": 187.5
+  },
+  {
+    "annee": 2002,
+    "entrees": 184.4
+  },
+  {
+    "annee": 2003,
+    "entrees": 173.5
+  },
+  {
+    "annee": 2004,
+    "entrees": 195.8
+  },
+  {
+    "annee": 2005,
+    "entrees": 175.6
+  },
+  {
+    "annee": 2006,
+    "entrees": 188.8
+  },
+  {
+    "annee": 2007,
+    "entrees": 178.5
+  },
+  {
+    "annee": 2008,
+    "entrees": 190.3
+  },
+  {
+    "annee": 2009,
+    "entrees": 201.6
+  },
+  {
+    "annee": 2010,
+    "entrees": 207.1
+  },
+  {
+    "annee": 2011,
+    "entrees": 217.2
+  },
+  {
+    "annee": 2012,
+    "entrees": 203.6
+  },
+  {
+    "annee": 2013,
+    "entrees": 193.7
+  },
+  {
+    "annee": 2014,
+    "entrees": 209.1
+  },
+  {
+    "annee": 2015,
+    "entrees": 205.4
+  },
+  {
+    "annee": 2016,
+    "entrees": 213.2
+  },
+  {
+    "annee": 2017,
+    "entrees": 209.4
+  },
+  {
+    "annee": 2018,
+    "entrees": 201.2
+  },
+  {
+    "annee": 2019,
+    "entrees": 213.2
+  },
+  {
+    "annee": 2020,
+    "entrees": 65.3
+  },
+  {
+    "annee": 2021,
+    "entrees": 95.5
+  },
+  {
+    "annee": 2022,
+    "entrees": 152
+  }
+]
