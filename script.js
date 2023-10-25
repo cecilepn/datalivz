@@ -9,7 +9,7 @@
     const data = jsonData.map(item => ({
         year: item.annee,
         count: item.entrees
-    }));
+    })); console.log(data)
 
 
 
@@ -23,7 +23,8 @@
                 datasets: [
                     {
                         label: 'Entrées par année',
-                        data: data.map(row => row.count)
+                        data: data.map(row => row.count),
+                        borderColor: '#03C7F7',
                     }
                 ]
             }
