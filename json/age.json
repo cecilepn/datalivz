@@ -1,0 +1,32 @@
+[
+  {
+    "population": "6-14",
+    "moyenne": 12.5,
+    "color": "#FFD203"
+  },
+  {
+    "population": "15-24",
+    "moyenne": 24.68,
+    "color": "#03C7F7"
+  },
+  {
+    "population": "25-34",
+    "moyenne": 14.97,
+    "color": "#6FC27C"
+  },
+  {
+    "population": "35-49",
+    "moyenne": 19.17,
+    "color": "#EDA1C5"
+  },
+  {
+    "population": "50-59",
+    "moyenne": 11,
+    "color": "#FF4200"
+  },
+  {
+    "population": "60+",
+    "moyenne": 17.78,
+    "color": "#29408D"
+  }
+]

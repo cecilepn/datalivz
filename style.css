@@ -116,3 +116,9 @@ span {
     color: black;
     border-color: #FFD203;
 }
+
+/* css âge */
+
+.age {
+    height: 100vh;
+}
