@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-color: black;
     font-family: 'Satoshi', sans-serif;
+    color: white;
 }
 
 .logo {
@@ -43,4 +44,75 @@ p {
 .prez {
     font-size: 1.7em;
     font-weight: 600;
+}
+
+
+/* graphique fréquentation  css */
+
+h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.frequentation {
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.graphique {
+    width: 80%;
+}
+
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0) 10%, #FFD203, #03C7F7, rgba(0, 0, 0, 0)),
+        radial-gradient(#03C7F7, #FFD203);
+
+    color: black;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.4em;
+}
+
+span {
+    padding: 20px;
+}
+
+#currentCount {
+    font-size: 2.8em;
+}
+
+#currentYear {
+    font-size: 1.4em;
+}
+
+
+/* btn css stop animation */
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+#stopAnimationButton {
+    color: #FFD203;
+    background-color: black;
+    border-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+
+}
+
+#stopAnimationButton:hover {
+    background-color: #FFD203;
+    color: black;
+    border-color: #FFD203;
 }

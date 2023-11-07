@@ -11,9 +11,10 @@
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
         rel="stylesheet">
 
-
+    <!-- Librairie Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script type="module" src="./script.js"></script>
+    <!-- Plugin Chart.js DataLabels  -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
 
 </head>
@@ -30,15 +31,27 @@
 
     </section>
 
-    <section class="frequentation">
-        <h2> Nombre d'entrées par année </h2>
 
-        <div><canvas id="graph1"></canvas></div>
-        <div></div>
+    <h2>Fréquentation des salles de cinéma en France par année de 1943 à 2022</h2>
+    <section class="frequentation">
+
+        <div class="graphique"><canvas id="graph1"></canvas></div>
+
+        <div id="info" class="bg">
+            <span id="currentCount"></span> Nombres d'entrées en million
+            <span id="currentYear"></span>
+        </div>
 
     </section>
 
 
+    <div class="btn"><button id="stopAnimationButton">Arrêter l'animation</button></div>
+
+
+
+
+
+    <script type="module" src="./script.js"></script>
 
 
 </body>
