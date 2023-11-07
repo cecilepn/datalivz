@@ -11,9 +11,11 @@ Ce projet étudiant vise à créer une page web dédiée à la visualisation de 
 
 # Concept de Cinéviz
 
-Ce site sera dédiée à l'évolution de la fréquentation des cinémas dans le monde et particulièrement en France depuis les années 40. 
-Une visualisation des box-offices à l'échelle mondiale sera également présente. 
-
+Ce site présente : 
+- l'évolution de la fréquentation des cinémas dans le monde et particulièrement en France depuis les années 40. 
+- la proportion de personnes dans différentes tranches d'âge parmi le public du cinéma.
+- Carte mondiale indiquant l'emplacement des tout premiers cinémas de chaque pays.
+- Liste des premiers films ayant réalisé le plus grand succès au box-office dans chaque pays faisant partie du top 10 des pays les plus grands consommateurs de cinéma dans le monde depuis 1980 à 2023.
 
 # Visite 
 
