@@ -16,6 +16,8 @@
     <!-- Plugin Chart.js DataLabels  -->
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
+    <!-- API Windy -->
+    <script defer src="https://www.webglearth.com/v2/api.js"></script>
 
 </head>
 
@@ -210,17 +212,32 @@
             </svg>
         </div>
 
+    </section>
 
 
+    <section class="map">
+        <div>
+            <div id="earth_div"></div>
+        </div>
+
+        <div>
+            <div class="marker-info">
+                <h2>Informations sur la salle de cinéma sélectionné</h2>
+                <p id="cine-nom"></p>
+                <p id="cine-annee"></p>
+                <p id="cine-ville"></p>
+                <p id="cine-pays"></p>
+            </div>
+
+        </div>
     </section>
 
 
 
 
-
-
-
-    <script type="module" src="./script.js"></script>
+    <script type="module" src="./js/chart.js"></script>
+    <script type="module" src="./js/cine.js"></script>
+    <script type="module" src="./js/map.js"></script>
 
 
 </body>

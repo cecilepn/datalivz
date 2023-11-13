@@ -1,0 +1,578 @@
+[
+  {
+    "nom": "Denkikan",
+    "pays": "Japon",
+    "ville": "Tokyo",
+    "annee": 1903,
+    "lat": 35.682839,
+    "long": 139.759455
+  },
+  {
+    "nom": "Wintergarden Theatre",
+    "pays": "Australie",
+    "ville": "Sydney",
+    "annee": 1929,
+    "lat": -33.865143,
+    "long": 151.2099
+  },
+  {
+    "nom": "Cinéma du Panthéon",
+    "pays": "France",
+    "ville": "Paris",
+    "annee": 1907,
+    "lat": 48.856613,
+    "long": 2.352222
+  },
+  {
+    "nom": "Le Grand Café",
+    "pays": "France",
+    "ville": "Paris",
+    "annee": 1895,
+    "lat": 48.856613,
+    "long": 2.352222
+  },
+  {
+    "nom": "Eden Théâtre",
+    "pays": "France",
+    "ville": "La Ciotat",
+    "annee": 1889,
+    "lat": 43.173227,
+    "long": 5.608155
+  },
+  {
+    "nom": "Scala Cinema",
+    "pays": "Thailand",
+    "ville": "Bangkok",
+    "annee": 1969,
+    "lat": 13.756331,
+    "long": 100.501762
+  },
+  {
+    "nom": "Capitol Cinema",
+    "pays": "Inde",
+    "ville": "Mumbai",
+    "annee": 1928,
+    "lat": 19.07609,
+    "long": 72.877426
+  },
+  {
+    "nom": "Kino Pionier",
+    "pays": "Pologne",
+    "ville": "Szczecin",
+    "annee": 1909,
+    "lat": 53.428543,
+    "long": 14.552812
+  },
+  {
+    "nom": "Regent Street Cinema",
+    "pays": "Royaume-Uni",
+    "ville": "Londres",
+    "annee": 1896,
+    "lat": 51.507351,
+    "long": -0.127758
+  },
+  {
+    "nom": "Moviemento",
+    "pays": "Allemagne",
+    "ville": "Berlin-Kreuzberg",
+    "annee": 1907,
+    "lat": 52.520008,
+    "long": 13.404954
+  },
+  {
+    "nom": "Teatro Dante",
+    "pays": "Italie",
+    "ville": "Tuscany",
+    "annee": 1836,
+    "lat": 43.76956,
+    "long": 11.255814
+  },
+  {
+    "nom": "Théâtre du Cinématographe",
+    "pays": "Belgique",
+    "ville": "Bruxelles",
+    "annee": 1905,
+    "lat": 50.850346,
+    "long": 4.351721
+  },
+  {
+    "nom": "Alhambra",
+    "pays": "Suisse",
+    "ville": "Genève",
+    "annee": 1920,
+    "lat": 46.204391,
+    "long": 6.143158
+  },
+  {
+    "nom": "Cine Doré",
+    "pays": "Espagne",
+    "ville": "Madrid",
+    "annee": 1912,
+    "lat": 40.416775,
+    "long": -3.70379
+  },
+  {
+    "nom": "Condes",
+    "pays": "Portugal",
+    "ville": "Lisbonne",
+    "annee": 1915,
+    "lat": 38.722252,
+    "long": -9.139337
+  },
+  {
+    "nom": "Eden Cinematografo",
+    "pays": "Mexique",
+    "ville": "México",
+    "annee": 1896,
+    "lat": 19.432608,
+    "long": -99.133209
+  },
+  {
+    "nom": "Edisonia Hall",
+    "pays": "Canada",
+    "ville": "Toronto",
+    "annee": 1896,
+    "lat": 43.65107,
+    "long": -79.347015
+  },
+  {
+    "nom": "Gran Salon Olympia",
+    "pays": "Colombie",
+    "ville": "Bogota",
+    "annee": 1897,
+    "lat": 4.60971,
+    "long": -74.081749
+  },
+  {
+    "nom": "Salão de Novidades Paris",
+    "pays": "Brésil",
+    "ville": "Rio de Janeiro",
+    "annee": 1896,
+    "lat": -22.906847,
+    "long": -43.172897
+  },
+  {
+    "nom": "Yuanmingyuan",
+    "pays": "Chine",
+    "ville": "Pékin (Beijing)",
+    "annee": 1902,
+    "lat": 39.9042,
+    "long": 116.407396
+  },
+  {
+    "nom": "Majestic",
+    "pays": "Indonésie",
+    "ville": "Jakarta",
+    "annee": 1910,
+    "lat": -6.208763,
+    "long": 106.845599
+  },
+  {
+    "nom": "Dansungsa",
+    "pays": "Corée du Sud",
+    "ville": "Séoul",
+    "annee": 1903,
+    "lat": 37.566535,
+    "long": 126.977969
+  },
+  {
+    "nom": "Auckland Opera House",
+    "pays": "Nouvelle-Zélande",
+    "ville": "Auckland",
+    "annee": 1896,
+    "lat": -36.848461,
+    "long": 174.763336
+  },
+  {
+    "nom": "Salon Pajou",
+    "pays": "Russie",
+    "ville": "Saint-Pétersbourg",
+    "annee": 1896,
+    "lat": 59.93428,
+    "long": 30.335099
+  },
+  {
+    "nom": "Olympion",
+    "pays": "Grèce",
+    "ville": "Athènes",
+    "annee": 1907,
+    "lat": 37.98381,
+    "long": 23.727539
+  },
+  {
+    "nom": "Teatro Odéon",
+    "pays": "Argentine",
+    "ville": "Buenos Aires",
+    "annee": 1896,
+    "lat": -34.611778,
+    "long": -58.417306
+  },
+  {
+    "nom": "Sark Cinema",
+    "pays": "Turquie",
+    "ville": "Istanbul",
+    "annee": 1896,
+    "lat": 41.008238,
+    "long": 28.978359
+  },
+  {
+    "nom": "Azbekiya Garden",
+    "pays": "Egypte",
+    "ville": "Caire",
+    "annee": 1896,
+    "lat": 30.04442,
+    "long": 31.235712
+  },
+  {
+    "nom": "Palais Miramar",
+    "pays": "Maroc",
+    "ville": "Casablanca",
+    "annee": 1907,
+    "lat": 34.020882,
+    "long": -6.84165
+  },
+  {
+    "nom": "Svenska Biografteatern",
+    "pays": "Suède",
+    "ville": "Stockholm",
+    "annee": 1896,
+    "lat": 59.329323,
+    "long": 18.068581
+  },
+  {
+    "nom": "Bioskop",
+    "pays": "Danemark",
+    "ville": "Copenhague",
+    "annee": 1904,
+    "lat": 55.676098,
+    "long": 12.568337
+  },
+  {
+    "nom": "Colosseum",
+    "pays": "Norvège",
+    "ville": "Oslo",
+    "annee": 1905,
+    "lat": 59.913869,
+    "long": 10.752245
+  },
+  {
+    "nom": "Vitascope Hall",
+    "pays": "Etats-Unis",
+    "ville": "Nouvelle-Orléans",
+    "annee": 1896,
+    "lat": 29.951065,
+    "long": -90.071533
+  },
+  {
+    "nom": "Cinéma du Boulevard",
+    "pays": "Sénégal",
+    "ville": "Dakar",
+    "annee": 1913,
+    "lat": 14.692778,
+    "long": -17.446667
+  },
+  {
+    "nom": "Cinéma Omnia",
+    "pays": "Tunisie",
+    "ville": "Tunis",
+    "annee": 1907,
+    "lat": 34.746611,
+    "long": 10.761329
+  },
+  {
+    "nom": "Cinéma Eden",
+    "pays": "Algérie",
+    "ville": "Oran",
+    "annee": 1907,
+    "lat": 35.691405,
+    "long": -0.641831
+  },
+  {
+    "nom": "Cinéma Rivoli",
+    "pays": "Algérie (Kabylie)",
+    "ville": "Tizi Ouzou",
+    "annee": 1927,
+    "lat": 36.715697,
+    "long": 4.051625
+  },
+  {
+    "nom": "Hollywood Egyptian Theatre",
+    "pays": "Etats-Unis (Hollywood)",
+    "ville": "Los Angeles",
+    "annee": 1922,
+    "lat": 34.052235,
+    "long": -118.243683
+  },
+  {
+    "nom": "Qajar Dynasty Palace",
+    "pays": "Iran",
+    "ville": "Téhéran",
+    "annee": 1900,
+    "lat": 35.689487,
+    "long": 51.394771
+  },
+  {
+    "nom": "Coliseum Theatre",
+    "pays": "Malaisie",
+    "ville": "Kuala Lumpur",
+    "annee": 1921,
+    "lat": 3.139003,
+    "long": 101.686855
+  },
+  {
+    "nom": "Cathay Building",
+    "pays": "Singapour",
+    "ville": "Singapour",
+    "annee": 1939,
+    "lat": 1.352083,
+    "long": 103.819836
+  },
+  {
+    "nom": "Hanoi Cinema",
+    "pays": "Vietnam",
+    "ville": "Hanoi",
+    "annee": 1911,
+    "lat": 21.028521,
+    "long": 105.854204
+  },
+  {
+    "nom": "Capitol Cinema",
+    "pays": "Pakistan",
+    "ville": "Karachi",
+    "annee": 1932,
+    "lat": 24.860735,
+    "long": 67.001137
+  },
+  {
+    "nom": "Palm Court",
+    "pays": "Nigeria",
+    "ville": "Lagos",
+    "annee": 1903,
+    "lat": 6.524379,
+    "long": 3.379206
+  },
+  {
+    "nom": "Regal Cinema",
+    "pays": "Ghana",
+    "ville": "Accra",
+    "annee": 1932,
+    "lat": 5.560014,
+    "long": -0.205744
+  },
+  {
+    "nom": "Vitascope Theatre",
+    "pays": "Afrique du Sud",
+    "ville": "Cap",
+    "annee": 1896,
+    "lat": -33.92487,
+    "long": 18.424055
+  },
+  {
+    "nom": "Kenya Cinema",
+    "pays": "Kenya",
+    "ville": "Nairobi",
+    "annee": 1908,
+    "lat": -1.286389,
+    "long": 36.817223
+  },
+  {
+    "nom": "Imperial Cinema",
+    "pays": "Ethiopie",
+    "ville": "Addis-Abeba",
+    "annee": 1935,
+    "lat": 9.145,
+    "long": 38.75
+  },
+  {
+    "nom": "Edison Theatre",
+    "pays": "Cuba",
+    "ville": "La Havane",
+    "annee": 1900,
+    "lat": 23.113592,
+    "long": -82.366592
+  },
+  {
+    "nom": "Jamaica Theatre",
+    "pays": "Jamaïque",
+    "ville": "Kingston",
+    "annee": 1907,
+    "lat": 17.970431,
+    "long": -76.79321
+  },
+  {
+    "nom": "Cinéma Royal",
+    "pays": "Réunion",
+    "ville": "Saint-Denis",
+    "annee": 1912,
+    "lat": -20.878407,
+    "long": 55.448328
+  },
+  {
+    "nom": "Cinéma Olympia",
+    "pays": "Chypre",
+    "ville": "Nicosie",
+    "annee": 1930,
+    "lat": 35.185565,
+    "long": 33.382391
+  },
+  {
+    "nom": "Eden Cinema",
+    "pays": "Tahiti",
+    "ville": "Papeete",
+    "annee": 1935,
+    "lat": -17.535,
+    "long": -149.569722
+  },
+  {
+    "nom": "Cinéma Rex",
+    "pays": "Madagascar",
+    "ville": "Antananarivo",
+    "annee": 1924,
+    "lat": -18.87919,
+    "long": 47.507905
+  },
+  {
+    "nom": "Bijou Theater",
+    "pays": "Hawaï",
+    "ville": "Honolulu",
+    "annee": 1906,
+    "lat": 21.306944,
+    "long": -157.858333
+  },
+  {
+    "nom": "Cine Ateneo",
+    "pays": "Philippines",
+    "ville": "Manille",
+    "annee": 1901,
+    "lat": 14.599512,
+    "long": 120.984222
+  },
+  {
+    "nom": "Rangoon Cinema",
+    "pays": "Birmanie",
+    "ville": "Rangoun",
+    "annee": 1922,
+    "lat": 16.866069,
+    "long": 96.195132
+  },
+  {
+    "nom": "Cinema Capitole",
+    "pays": "Laos",
+    "ville": "Vientiane",
+    "annee": 1954,
+    "lat": 17.975706,
+    "long": 102.633104
+  },
+  {
+    "nom": "Empire Cinema",
+    "pays": "Brunei",
+    "ville": "Bandar Seri Begawan",
+    "annee": 1953,
+    "lat": 4.88573,
+    "long": 114.931514
+  },
+  {
+    "nom": "Salon Variedades",
+    "pays": "Chili",
+    "ville": "Santiago",
+    "annee": 1898,
+    "lat": -33.44889,
+    "long": -70.669265
+  },
+  {
+    "nom": "Cine Orrantia",
+    "pays": "Pérou",
+    "ville": "Lima",
+    "annee": 1904,
+    "lat": -12.046374,
+    "long": -77.042793
+  },
+  {
+    "nom": "Cinematografo Americano",
+    "pays": "Venezuela",
+    "ville": "Caracas",
+    "annee": 1904,
+    "lat": 10.48801,
+    "long": -66.87919
+  },
+  {
+    "nom": "Teatro Salon de la Florida",
+    "pays": "Uruguay",
+    "ville": "Montevideo",
+    "annee": 1905,
+    "lat": -34.901112,
+    "long": -56.191997
+  },
+  {
+    "nom": "Teatro Nacional",
+    "pays": "Paraguay",
+    "ville": "Asucion",
+    "annee": 1900,
+    "lat": -25.263739,
+    "long": -57.575926
+  },
+  {
+    "nom": "Teatro Variedades",
+    "pays": "Equateur",
+    "ville": "Quito",
+    "annee": 1905,
+    "lat": -0.229498,
+    "long": -78.524272
+  },
+  {
+    "nom": "Teatro Municipal",
+    "pays": "Bolivie",
+    "ville": "La Paz",
+    "annee": 1905,
+    "lat": -16.5,
+    "long": -68.119293
+  },
+  {
+    "nom": "Salon Dorado",
+    "pays": "Costa Rica",
+    "ville": "San José",
+    "annee": 1897,
+    "lat": 9.928069,
+    "long": -84.090725
+  },
+  {
+    "nom": "Cine Lux",
+    "pays": "Guatemala",
+    "ville": "Guatemala city",
+    "annee": 1906,
+    "lat": 14.634915,
+    "long": -90.506882
+  },
+  {
+    "nom": "Teatro Presidente",
+    "pays": "Salvador",
+    "ville": "San Salvador",
+    "annee": 1917,
+    "lat": 13.69373,
+    "long": -89.190791
+  },
+  {
+    "nom": "Cine Variedades",
+    "pays": "Nicaragua",
+    "ville": "Managua",
+    "annee": 1900,
+    "lat": 12.136389,
+    "long": -86.251389
+  },
+  {
+    "nom": "Teatro Variedades",
+    "pays": "Panama",
+    "ville": "Panama City",
+    "annee": 1905,
+    "lat": 8.982379,
+    "long": -79.51987
+  },
+  {
+    "nom": "Colonial Theatre",
+    "pays": "Belize",
+    "ville": "Belize City",
+    "annee": 1910,
+    "lat": 17.501632,
+    "long": -88.196212
+  }
+]

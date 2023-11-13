@@ -117,8 +117,27 @@ span {
     border-color: #FFD203;
 }
 
-/* css âge */
+/* css section siège avec la tranche d'âge */
 
 .age {
     height: 100vh;
+}
+
+
+/* css section map et infos */
+
+.map {
+    position: relative;
+}
+
+#div_earth {
+    position: absolute;
+    left: 10px;
+}
+
+.marker-info {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    text-align: right;
 }
