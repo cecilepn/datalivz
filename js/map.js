@@ -16,7 +16,7 @@ function initialize() {
         });
 
     // Création d'une nouvelle carte avec Windy API 
-    var earth = new WE.map('earth_div', { atmosphere: true, sky: false, dragging: true });
+    var earth = new WE.map('earth', { atmosphere: true, sky: false, dragging: true });
 
     // Personnalisation de la carte en utilisant un thème sombre
     WE.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {}).addTo(earth);
@@ -28,6 +28,17 @@ function initialize() {
 
     earth.on('pointerup', function () {
         document.body.style.cursor = 'auto';
+    });
+
+
+
+    // Bouton reset de la vue de la carte
+    const resetButton = document.getElementById('resetButton');
+
+    resetButton.addEventListener('click', function () {
+        // Réinitialise la position de la carte à l'emplacement donné
+        earth.setView([0, 0], 2);
+
     });
 
 
@@ -54,6 +65,16 @@ function initialize() {
                     if (!countryTheaters[countryKey]) {
                         // Création de marqueurs et ajout à la carte
                         let marker = WE.marker([e.lat, e.long]).addTo(earth);
+                        let element = document.querySelectorAll('.we-pm-icon')[document.querySelectorAll('.we-pm-icon').length - 1];
+                        element.style.backgroundImage = `url('./img/dot.png')`;
+                        element.style.backgroundSize = 'contain';
+                        element.style.width = '10px';
+                        element.style.height = '10px';
+                        element.style.borderRadius = '50%';
+                        element.style.boxShadow = '0 0 8px 3px #fff';
+                        element.style.cursor = 'pointer';
+                        element.style.margin = '-10px';
+
                         markers.push(marker);
 
                         // Ajout d'un événement de clic au marqueur
@@ -75,6 +96,7 @@ function initialize() {
 
     // Appel de la fonction markerGenerate pour initialiser les marqueurs au chargement
     markerGenerate();
+
 }
 
 // Appel de la fonction initialize pour configurer la carte
