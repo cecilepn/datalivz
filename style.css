@@ -138,9 +138,9 @@ span {
 }
 
 #earth {
-    width: 1100px;
-    height: auto;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.7889749649859944) 22%, rgba(255, 66, 0, 1) 40%, rgba(0, 0, 0, 0.8786108193277311) 74%);
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7889749649859944) 12%, rgba(255, 66, 0, 0.6209077380952381) 26%, rgba(0, 0, 0, 0.8786108193277311) 48%);
 
 }
 
@@ -148,5 +148,5 @@ span {
     position: absolute;
     top: 0;
     right: 10px;
-    text-align: right;
+    text-align: left;
 }

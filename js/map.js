@@ -37,7 +37,7 @@ function initialize() {
 
     resetButton.addEventListener('click', function () {
         // Réinitialise la position de la carte à l'emplacement donné
-        earth.setView([0, 0], 2);
+        earth.setView([0, 0], 2.4);
 
     });
 
