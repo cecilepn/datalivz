@@ -74,7 +74,13 @@
     // Gestionnaire de clic sur le bouton "Arrêter l'animation"
     document.getElementById('stopAnimationButton').addEventListener('click', () => {
         clearInterval(animationInterval); // Arrête l'animation
+
+        // Cache la div détaillée des informations
+        document.getElementById('info').style.display = 'none';
+
+
         // Afficher le graphique complet en mettant à jour les données une dernière fois
+
         while (currentYearIndex < data.length) {
             updateGraphAndInfo();
         }
