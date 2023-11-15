@@ -36,46 +36,51 @@
     </section>
 
     <!-- Section fréquentation des salles de cinéma -->
+    <section>
 
-    <h2>Fréquentation des salles de cinéma en France par année de 1943 à 2022</h2>
-    <section class="frequentation">
+        <h2>Nombre d'entrées (millions) par année </h2>
+        
+        <div class="frequentation">
 
-        <div class="graphique"><canvas id="graph1"></canvas></div>
+            <div class="graphique"><canvas id="graph1"></canvas></div>
 
-        <div id="info" class="bg">
-            <span id="currentCount"></span> Nombres d'entrées en million
-            <span id="currentYear"></span>
+            <div id="info" class="bg">
+                <span id="currentCount"></span> Nombres d'entrées en million
+                <span id="currentYear"></span>
+            </div>
+
         </div>
+        <p>Fréquentation des salles de cinéma en France par année de 1943 à 2022</p>
 
+        <div class="btn" id="stopAnimationButton">Afficher le graphique</div>
     </section>
-
-
-    <div class="btn"><button id="stopAnimationButton">Afficher le graphique</button></div>
 
     <!-- Section proportion âge public -->
 
     <section class="age">
 
-        <h2 id="percentage-display"> Qui se rend au cinéma ? </h2>
+        <h2> Qui se rend au cinéma ?</h2>
+
+        <p id="percentage-display"> Sélectionnez vos fauteuils :</p>
 
         <div class="contBtn">
-            <div id="btn-6-14" class="age-button"><img src="./img/yellow.svg" alt="" class="siege">Tranche d'âge 6-14
+            <div id="btn-6-14" class="age-button"><img src="./img/yellow.svg" alt="" class="siege" id="test"> 6-14
             </div>
-            <div id="btn-15-24" class="age-button"> <img src="./img/blue.svg" alt="" class="siege">Tranche d'âge 15-24
+            <div id="btn-15-24" class="age-button"> <img src="./img/blue.svg" alt="" class="siege">15-24
             </div>
-            <div id="btn-25-34" class="age-button"><img src="./img/green.svg" alt="" class="siege">Tranche d'âge 25-34
+            <div id="btn-25-34" class="age-button"><img src="./img/green.svg" alt="" class="siege">25-34
             </div>
-            <div id="btn-35-49" class="age-button"><img src="./img/pink.svg" alt="" class="siege">Tranche d'âge 35-49
+            <div id="btn-35-49" class="age-button"><img src="./img/pink.svg" alt="" class="siege">35-49
             </div>
-            <div id="btn-50-59" class="age-button"><img src="./img/red.svg" alt="" class="siege">Tranche d'âge 50-59
+            <div id="btn-50-59" class="age-button"><img src="./img/red.svg" alt="" class="siege">50-59
             </div>
-            <div id="btn-60+" class="age-button"><img src="./img/marine.svg" alt="" class="siege">Tranche d'âge 60+
+            <div id="btn-60+" class="age-button"><img src="./img/marine.svg" alt="" class="siege">60+
             </div>
         </div>
 
         <div class="salle">
 
-            <svg width="1000" height="500">
+            <svg width="1020px" height="500">
                 <!-- Définition de la forme personnalisée du siège dans la section <defs> -->
                 <defs>
                     <path id="custom-seat" fill-rule="evenodd" clip-rule="evenodd"

@@ -5,6 +5,9 @@ document.body.addEventListener('click', function (event) {
         changeAgeGroupColor(ageGroup);
     }
 });
+// Changement du curseur de la souris pendant le survol du siège
+
+
 
 // Fonction pour changer la couleur en fonction du groupe d'âge
 function changeAgeGroupColor(ageGroup) {
@@ -39,7 +42,7 @@ function changeAgeGroupColor(ageGroup) {
             });
 
             // Met à jour l'élément d'affichage du pourcentage
-            document.getElementById('percentage-display').textContent = `${numSeatsToColor} sièges dans une salle cinéma sont pris par les ${ageGroup} soit ${percentage}% des entrées en moyenne de 1943 à 2022`;
+            document.getElementById('percentage-display').textContent = `${numSeatsToColor} sièges dans une salle cinéma sont pris par les ${ageGroup} ans soit ${percentage}% des entrées en moyenne de 1943 à 2022`;
         })
         .catch(error => {
             console.error('Une erreur s\'est produite : ', error);

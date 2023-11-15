@@ -28,7 +28,6 @@
 
     const graphOptions = {
         responsive: true,
-        maintainAspectRatio: false, // Permet de ne pas déformer le graphique
         scales: {
             yAxes: [
                 {
