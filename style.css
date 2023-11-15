@@ -124,12 +124,28 @@ span {
 
 /* css section siège avec la tranche d'âge */
 
-.salle {
+.age {
+    height: 120vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
+.contBtn {
+    display: flex;
+    justify-content: center;
+}
+
+
+.age-button {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.siege {
+    height: 50px;
+    margin: 10px;
+}
 
 /* css section map et infos */
 

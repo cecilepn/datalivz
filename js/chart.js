@@ -78,7 +78,6 @@
         // Cache la div détaillée des informations
         document.getElementById('info').style.display = 'none';
 
-
         // Afficher le graphique complet en mettant à jour les données une dernière fois
 
         while (currentYearIndex < data.length) {
