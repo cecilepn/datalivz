@@ -61,6 +61,7 @@
             document.getElementById('currentYear').textContent = data[currentYearIndex].year;
             document.getElementById('currentCount').textContent = data[currentYearIndex].count;
 
+
             currentYearIndex++;
         } else {
             clearInterval(animationInterval); // Arrête l'animation à la fin des données
@@ -74,14 +75,43 @@
     document.getElementById('stopAnimationButton').addEventListener('click', () => {
         clearInterval(animationInterval); // Arrête l'animation
 
-        // Cache la div détaillée des informations
-        document.getElementById('info').style.display = 'none';
-
         // Afficher le graphique complet en mettant à jour les données une dernière fois
 
         while (currentYearIndex < data.length) {
             updateGraphAndInfo();
         }
+
+
+        //Change le curseur de la souris lorsqu'il survole le graphique 
+        graph1.canvas.addEventListener('mousemove', (event) => {
+            const activePoints = graph1.getElementsAtEvent(event);
+
+            if (activePoints.length > 0) {
+                graph1.canvas.style.cursor = 'pointer';
+            } else {
+                graph1.canvas.style.cursor = 'default';
+            }
+        });
+        // Afficher les données du point cliqué dans la div avec l'id "info"
+        graph1.canvas.addEventListener('click', (event) => {
+            const activePoints = graph1.getElementsAtEvent(event);
+
+            if (activePoints.length > 0) {
+                const clickedIndex = activePoints[0]._index;
+                const clickedYear = graphData.labels[clickedIndex];
+                const clickedCount = graphData.datasets[0].data[clickedIndex];
+
+                document.getElementById('currentYear').textContent = `${clickedYear}`;
+                document.getElementById('currentCount').textContent = `${clickedCount} millions`;
+            }
+        });
+
+        // Réinitialiser le curseur lorsque la souris quitte le graphique
+        graph1.canvas.addEventListener('mouseout', () => {
+            graph1.canvas.style.cursor = 'default';
+        });
+
+
     });
 
     // Afficher les informations initiales

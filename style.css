@@ -148,8 +148,10 @@ span {
 
 .salle {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
+
+
 
 /* css section map et infos */
 
@@ -167,6 +169,6 @@ span {
 .marker-info {
     position: absolute;
     top: 0;
-    right: 10px;
+    left: 10px;
     text-align: left;
 }

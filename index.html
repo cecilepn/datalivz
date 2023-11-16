@@ -39,13 +39,13 @@
     <section>
 
         <h2>Nombre d'entrées (millions) par année </h2>
-        
+
         <div class="frequentation">
 
             <div class="graphique"><canvas id="graph1"></canvas></div>
 
             <div id="info" class="bg">
-                <span id="currentCount"></span> Nombres d'entrées en million
+                <span id="currentCount"></span> nombres d'entrées
                 <span id="currentYear"></span>
             </div>
 
@@ -60,8 +60,8 @@
     <section class="age">
 
         <h2> Qui se rend au cinéma ?</h2>
-
-        <p id="percentage-display"> Sélectionnez vos fauteuils :</p>
+        <p>Sélectionnez vos fauteuils :</p>
+        <span id="percentage-display"> </span>
 
         <div class="contBtn">
             <div id="btn-6-14" class="age-button"><img src="./img/yellow.svg" alt="" class="siege" id="test"> 6-14
@@ -80,7 +80,7 @@
 
         <div class="salle">
 
-            <svg width="1020px" height="500">
+            <svg width="1000px" height="500">
                 <!-- Définition de la forme personnalisée du siège dans la section <defs> -->
                 <defs>
                     <path id="custom-seat" fill-rule="evenodd" clip-rule="evenodd"
@@ -322,6 +322,7 @@
                 <use xlink:href="#custom-seat" x="900" y="450" width="10" height="10" class="seat" fill="black"
                     stroke="white" />
             </svg>
+
         </div>
 
     </section>
@@ -346,7 +347,13 @@
     </section>
 
 
+    <section class="ml">
+        <div>
+            <h4> Data sources et crédits </h4>
+            <div id="sources"></div>
+        </div>
 
+    </section>
 
     <script type="module" src="./js/chart.js"></script>
     <script type="module" src="./js/cine.js"></script>
