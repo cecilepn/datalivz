@@ -12,6 +12,7 @@ section {
     height: 100vh;
 }
 
+
 /* css section présentation */
 
 .logo {
@@ -227,12 +228,14 @@ svg {
     font-size: 1.8em;
     font-weight: 800;
     margin: 0;
+
+    padding-bottom: 10px;
+    border-bottom: #FF4200 solid 1px;
 }
 
 #cine-pays,
 #cine-ville {
-    font-size: 0.8em;
-    font-weight: 600;
+    font-size: 0.9em;
     display: inline;
 }
 
@@ -240,6 +243,8 @@ svg {
 #cine-info {
     color: #FFD203;
 }
+
+
 
 hr {
     position: absolute;
