@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -19,6 +19,15 @@
     <!-- web GL earth api -->
     <script defer src="https://www.webglearth.com/v2/api.js"></script>
 
+
+    <!-- jquery and scrollify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+        integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -29,28 +38,29 @@
     </div>
 
     <section class="titre">
-
         <h1>Cineviz</h1>
-        <p> Présente <span class="prez"> <br> Un projet dataviz sur la frequentation des cinemas </span> </p>
+        <p> Présente <span class="text"> <br> Un projet dataviz sur la frequentation des cinemas </span> </p>
 
     </section>
 
     <!-- Section fréquentation des salles de cinéma -->
-    <section>
+    <section class="frequentation">
 
-        <h2>Nombre d'entrées (millions) par année </h2>
+        <h2>Fréquentation des salles de cinéma en France de 1943 à 2022 </h2>
 
         <div class="frequentation">
 
-            <div class="graphique"><canvas id="graph1"></canvas></div>
-
-            <div id="info" class="bg">
-                <span id="currentCount"></span> nombres d'entrées
-                <span id="currentYear"></span>
-            </div>
+            <canvas id="graph1"></canvas>
 
         </div>
-        <p>Fréquentation des salles de cinéma en France par année de 1943 à 2022</p>
+        <div id="info">
+            <span id="currentCount"></span> millions d'entrées en
+            <span id="currentYear"></span>
+        </div>
+        <div id="complement"><span id="explication"></span></div>
+
+        <p class="consigne"> Cliquez sur un point coloré du graphique une fois affiché entièrement pour obtenir plus
+            d'informations. </p>
 
         <div class="btn" id="stopAnimationButton">Afficher le graphique</div>
     </section>
@@ -59,7 +69,7 @@
 
     <section class="age">
 
-        <h2> Qui se rend au cinéma ?</h2>
+        <h2> Quel âge avez-vous ?</h2>
         <p>Sélectionnez vos fauteuils :</p>
         <span id="percentage-display"> </span>
 
@@ -347,14 +357,13 @@
     </section>
 
 
-    <section class="ml">
-        <div>
-            <h4> Data sources et crédits </h4>
-            <div id="sources"></div>
-        </div>
+    <footer>
 
-    </section>
 
+    </footer>
+
+
+    <script src="script.js"></script>
     <script type="module" src="./js/chart.js"></script>
     <script type="module" src="./js/cine.js"></script>
     <script type="module" src="./js/map.js"></script>

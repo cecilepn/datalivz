@@ -1,322 +1,402 @@
 [
   {
     "annee": 1943,
-    "entrees": 304.5
+    "entrees": 304.5,
+    "desc": "En 1943, la France était toujours sous occupation allemande, et les restrictions imposées par les autorités allemandes étaient à leur apogée. La censure était particulièrement stricte, et de nombreux films étaient interdits. Les conditions économiques difficiles et les pénuries liées à la guerre ont affecté la production et la distribution des films."
   },
   {
     "annee": 1944,
-    "entrees": 245.4
+    "entrees": 245.4,
+    "desc": "La chute des entrées en 1944 est expliquée par la combinaison de la situation de guerre, des perturbations liées aux conflits en cours, et de la transition vers la libération créant une période d'incertitude et de prudence chez le public."
   },
   {
     "annee": 1945,
-    "entrees": 402
+    "entrees": 402,
+    "desc": "La hausse de la fréquentation en 1945 en France était le résultat direct de la fin de la guerre, de la libération du pays, et du besoin de la population de retrouver une vie normale avec des activités de loisirs, dont le cinéma faisait partie."
   },
   {
     "annee": 1946,
-    "entrees": 369
+    "entrees": 369,
+    "desc": "En 1946, la fréquentation des salles de cinéma en France a été soutenue par la reprise économique, la redynamisation de l'industrie cinématographique et la soif de divertissement de la population après les années difficiles de la guerre. C'est la première année où le festival de Cannes a eu lieu, et le premier prix a été décerné à \"La Symphonie pastorale\" de Jean Delannoy."
   },
   {
     "annee": 1947,
-    "entrees": 423.7
+    "entrees": 423.7,
+    "desc": "1947 est l'année avec les entrées de cinéma les plus élevées que la France n'ait jamais connu. Cette hausse s'explique par une stabilité économique, politique et sociale, la richesse de la production cinématographique, l'émergence de nouveaux talents, et la consolidation de l'engouement du public pour le cinéma après la période difficile de la guerre."
   },
   {
     "annee": 1948,
-    "entrees": 402
+    "entrees": 402,
+    "desc": ""
   },
   {
     "annee": 1949,
-    "entrees": 387.7
+    "entrees": 387.7,
+    "desc": ""
   },
   {
     "annee": 1950,
-    "entrees": 370.7
+    "entrees": 370.7,
+    "desc": "De 1948 à 1952, bien que les informations spécifiques à ces années soient limitées, elles reflètent une forme de consolidation des tendances observées des années précédentes. De plus, les foyers français commencent à s'équiper en télévision, ce qui avait un impact sur la fréquentation des salles de cinéma."
   },
   {
     "annee": 1951,
-    "entrees": 372.8
+    "entrees": 372.8,
+    "desc": ""
   },
   {
     "annee": 1952,
-    "entrees": 359.6
+    "entrees": 359.6,
+    "desc": "L'année 1952, bien que l'information spécifique à cette année soit limitée, marque le début d'une croissance modérée qui peut être expliquée par l'émergence de nouveaux genres, de réalisateurs influents et de films à succès."
   },
   {
     "annee": 1953,
-    "entrees": 370.6
+    "entrees": 370.6,
+    "desc": "Entre 1953 et 1957, la fréquentation des salles de cinéma en France a connu une croissance soutenue, entrainée par une production cinématographique dynamique attirant les spectateurs, et une stabilité politique favorisant les loisirs culturels. Cette période a également été marquée par l'émergence de nouveaux talents cinématographiques et des innovations dans l'expérience cinématographique, contribuant à maintenir l'attrait du public pour les cinémas."
   },
   {
     "annee": 1954,
-    "entrees": 382.8
+    "entrees": 382.8,
+    "desc": ""
   },
   {
     "annee": 1955,
-    "entrees": 394.8
+    "entrees": 394.8,
+    "desc": ""
   },
   {
     "annee": 1956,
-    "entrees": 398.8
+    "entrees": 398.8,
+    "desc": ""
   },
   {
     "annee": 1957,
-    "entrees": 411.6
+    "entrees": 411.6,
+    "desc": "C'est en 1957 que semble s'achever, en terme de fréquentation, « l'âge d'or » du cinéma français : cette année là, le nombre d'entrées dans les salles (411,6 millions de spectateurs) dépasse pour la dernière fois du siècle la barrière symbolique des 400 millions...A cet « âge d'or » succèdent trente-cinq années difficiles, au cours desquelles la fréquentation diminue de 250 %."
   },
   {
     "annee": 1958,
-    "entrees": 371
+    "entrees": 371,
+    "desc": "Entre 1958 et 1971, la fréquentation des salles de cinéma en France a connu un déclin significatif, diminuant de plus de 140% pour passer de 411,6 millions d'entrées à 170,3 millions. Ce recul s'explique principalement par la généralisation des téléviseurs dans les foyers des classes moyennes et populaires, offrant une alternative de divertissement à domicile."
   },
   {
     "annee": 1959,
-    "entrees": 353.7
+    "entrees": 353.7,
+    "desc": ""
   },
   {
     "annee": 1960,
-    "entrees": 354.6
+    "entrees": 354.6,
+    "desc": ""
   },
   {
     "annee": 1961,
-    "entrees": 328.3
+    "entrees": 328.3,
+    "desc": ""
   },
   {
     "annee": 1962,
-    "entrees": 311.7
+    "entrees": 311.7,
+    "desc": ""
   },
   {
     "annee": 1963,
-    "entrees": 291.2
+    "entrees": 291.2,
+    "desc": ""
   },
   {
     "annee": 1964,
-    "entrees": 275.8
+    "entrees": 275.8,
+    "desc": ""
   },
   {
     "annee": 1965,
-    "entrees": 259.1
+    "entrees": 259.1,
+    "desc": ""
   },
   {
     "annee": 1966,
-    "entrees": 234.2
+    "entrees": 234.2,
+    "desc": ""
   },
   {
     "annee": 1967,
-    "entrees": 211.5
+    "entrees": 211.5,
+    "desc": ""
   },
   {
     "annee": 1968,
-    "entrees": 203.2
+    "entrees": 203.2,
+    "desc": ""
   },
   {
     "annee": 1969,
-    "entrees": 183.9
+    "entrees": 183.9,
+    "desc": ""
   },
   {
     "annee": 1970,
-    "entrees": 184.4
+    "entrees": 184.4,
+    "desc": ""
   },
   {
     "annee": 1971,
-    "entrees": 177
+    "entrees": 177,
+    "desc": "La période de 1971 à 1983 est une phase marquée par une stabilisation de la fréquentation des salles de cinéma. Elle est caractérisée par des ajustements de l'industrie cinématographique pour répondre aux nouveaux défis, proposant des expériences cinématographiques novatrices pour maintenir l'intérêt du public. Malgré la concurrence croissante de la télévision et les évolutions des modes de vie, certains cinémas ont réussi à maintenir leur attractivité au cours de cette période."
   },
   {
     "annee": 1972,
-    "entrees": 184.4
+    "entrees": 184.4,
+    "desc": ""
   },
   {
     "annee": 1973,
-    "entrees": 176
+    "entrees": 176,
+    "desc": ""
   },
   {
     "annee": 1974,
-    "entrees": 179.4
+    "entrees": 179.4,
+    "desc": ""
   },
   {
     "annee": 1975,
-    "entrees": 181.7
+    "entrees": 181.7,
+    "desc": ""
   },
   {
     "annee": 1976,
-    "entrees": 177.3
+    "entrees": 177.3,
+    "desc": ""
   },
   {
     "annee": 1977,
-    "entrees": 170.3
+    "entrees": 170.3,
+    "desc": ""
   },
   {
     "annee": 1978,
-    "entrees": 178.5
+    "entrees": 178.5,
+    "desc": ""
   },
   {
     "annee": 1979,
-    "entrees": 178.1
+    "entrees": 178.1,
+    "desc": ""
   },
   {
     "annee": 1980,
-    "entrees": 175.4
+    "entrees": 175.4,
+    "desc": ""
   },
   {
     "annee": 1981,
-    "entrees": 189.2
+    "entrees": 189.2,
+    "desc": ""
   },
   {
     "annee": 1982,
-    "entrees": 201.9
+    "entrees": 201.9,
+    "desc": ""
   },
   {
     "annee": 1983,
-    "entrees": 198.9
+    "entrees": 198.9,
+    "desc": ""
   },
   {
     "annee": 1984,
-    "entrees": 190.9
+    "entrees": 190.9,
+    "desc": "Au cours de la période de 1984 à 1990, la fréquentation des salles de cinéma en France a connu des fluctuations marquées, influencées par des facteurs tels que l'émergence des multiplexes, l'évolution des pratiques de consommation culturelle, et les adaptations de l'industrie cinématographique pour répondre aux changements du paysage médiatique et des attentes du public."
   },
   {
     "annee": 1985,
-    "entrees": 175.1
+    "entrees": 175.1,
+    "desc": ""
   },
   {
     "annee": 1986,
-    "entrees": 168.1
+    "entrees": 168.1,
+    "desc": ""
   },
   {
     "annee": 1987,
-    "entrees": 136.9
+    "entrees": 136.9,
+    "desc": ""
   },
   {
     "annee": 1988,
-    "entrees": 124.7
+    "entrees": 124.7,
+    "desc": ""
   },
   {
     "annee": 1989,
-    "entrees": 120.9
+    "entrees": 120.9,
+    "desc": ""
   },
   {
     "annee": 1990,
-    "entrees": 121.9
+    "entrees": 121.9,
+    "desc": "L'émergence des multiplexes offre une nouvelle expérience cinématographique, attirant un public plus large avec des installations modernes."
   },
   {
     "annee": 1991,
-    "entrees": 117.5
+    "entrees": 117.5,
+    "desc": ""
   },
   {
     "annee": 1992,
-    "entrees": 116
+    "entrees": 116,
+    "desc": " "
   },
   {
     "annee": 1993,
-    "entrees": 132.7
+    "entrees": 132.7,
+    "desc": ""
   },
   {
     "annee": 1994,
-    "entrees": 124.4
+    "entrees": 124.4,
+    "desc": ""
   },
   {
     "annee": 1995,
-    "entrees": 130.2
+    "entrees": 130.2,
+    "desc": ""
   },
   {
     "annee": 1996,
-    "entrees": 136.7
+    "entrees": 136.7,
+    "desc": ""
   },
   {
     "annee": 1997,
-    "entrees": 149.3
+    "entrees": 149.3,
+    "desc": "'Titanic' (1997) : Réalisé par James Cameron, ce film épique a été un immense succès mondial, attirant un large public et restant longtemps le film le plus rentable de tous les temps."
   },
   {
     "annee": 1998,
-    "entrees": 170.6
+    "entrees": 170.6,
+    "desc": ""
   },
   {
     "annee": 1999,
-    "entrees": 153.6
+    "entrees": 153.6,
+    "desc": ""
   },
   {
     "annee": 2000,
-    "entrees": 165.8
+    "entrees": 165.8,
+    "desc": ""
   },
   {
     "annee": 2001,
-    "entrees": 187.5
+    "entrees": 187.5,
+    "desc": "'Harry Potter à l'école des sorciers' : Le début de la franchise cinématographique basée sur les livres de J.K. Rowling a captivé un vaste auditoire, établissant le succès continu des films suivants. Mais aussi, Le Seigneur des anneaux : La Communauté de l'anneau' : Le premier film de la trilogie de Peter Jackson a été un succès critique et commercial, et a contribué à la popularité des films de fantasy."
   },
   {
     "annee": 2002,
-    "entrees": 184.4
+    "entrees": 184.4,
+    "desc": ""
   },
   {
     "annee": 2003,
-    "entrees": 173.5
+    "entrees": 173.5,
+    "desc": ""
   },
   {
     "annee": 2004,
-    "entrees": 195.8
+    "entrees": 195.8,
+    "desc": ""
   },
   {
     "annee": 2005,
-    "entrees": 175.6
+    "entrees": 175.6,
+    "desc": "Le lancement de formules d'abonnement illimitées stimule la fréquentation, favorisant les spectateurs assidus et augmentant le taux d'occupation des salles."
   },
   {
     "annee": 2006,
-    "entrees": 188.8
+    "entrees": 188.8,
+    "desc": ""
   },
   {
     "annee": 2007,
-    "entrees": 178.5
+    "entrees": 178.5,
+    "desc": ""
   },
   {
     "annee": 2008,
-    "entrees": 190.3
+    "entrees": 190.3,
+    "desc": ""
   },
   {
     "annee": 2009,
-    "entrees": 201.6
+    "entrees": 201.6,
+    "desc": "'Avatar': Une fois de plus dirigé par James Cameron, 'Avatar' a établi de nouveaux records au box-office mondial et a été acclamé pour ses avancées technologiques."
   },
   {
     "annee": 2010,
-    "entrees": 207.1
+    "entrees": 207.1,
+    "desc": "L'essor des plateformes de streaming et la montée du streaming à la demande offrent une alternative à la fréquentation des cinémas, introduisant un défi concurrentiel."
   },
   {
     "annee": 2011,
-    "entrees": 217.2
+    "entrees": 217.2,
+    "desc": ""
   },
   {
     "annee": 2012,
-    "entrees": 203.6
+    "entrees": 203.6,
+    "desc": ""
   },
   {
     "annee": 2013,
-    "entrees": 193.7
+    "entrees": 193.7,
+    "desc": ""
   },
   {
     "annee": 2014,
-    "entrees": 209.1
+    "entrees": 209.1,
+    "desc": ""
   },
   {
     "annee": 2015,
-    "entrees": 205.4
+    "entrees": 205.4,
+    "desc": "Les cinémas continuent à s'adapter avec des technologies immersives comme la 3D pour maintenir l'attrait, mais la concurrence numérique persiste avec la popularité croissante des services de streaming."
   },
   {
     "annee": 2016,
-    "entrees": 213.2
+    "entrees": 213.2,
+    "desc": ""
   },
   {
     "annee": 2017,
-    "entrees": 209.4
+    "entrees": 209.4,
+    "desc": ""
   },
   {
     "annee": 2018,
-    "entrees": 201.2
+    "entrees": 201.2,
+    "desc": ""
   },
   {
     "annee": 2019,
-    "entrees": 213.2
+    "entrees": 213.2,
+    "desc": "'Avengers: Endgame': Le dernier volet de la saga des Avengers de Marvel a été un énorme succès commercial, concluant de manière épique plusieurs années de narration cinématographique."
   },
   {
     "annee": 2020,
-    "entrees": 65.3
+    "entrees": 65.3,
+    "desc": "La pandémie de COVID-19 perturbe considérablement la fréquentation des cinémas, avec des fermetures temporaires, des retards de sortie de films, et un changement dans les habitudes de consommation avec une augmentation du streaming à domicile."
   },
   {
     "annee": 2021,
-    "entrees": 95.5
+    "entrees": 95.5,
+    "desc": ""
   },
   {
     "annee": 2022,
-    "entrees": 152
+    "entrees": 152,
+    "desc": " 'Avatar : La Voie de l’eau' a rapporté environ 2,320 milliards de dollars dans le monde, ce qui en fait le plus gros succès de 2022, le plus gros succès depuis le début de la pandémie de Covid-19 et le troisième plus gros succès de tous les temps."
   }
 ]

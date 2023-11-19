@@ -12,12 +12,15 @@ section {
     height: 100vh;
 }
 
+/* css section présentation */
+
 .logo {
     width: 50px;
     height: 100%;
     object-fit: cover;
     margin: 10px;
 }
+
 
 .titre {
     margin: 0;
@@ -42,17 +45,15 @@ h1 {
 }
 
 
-.prez {
+.text {
     font-size: 1.7em;
     font-weight: 600;
 }
 
 
 /* graphique fréquentation  css */
-
-
 .frequentation {
-    display: flex;
+    position: relative;
 }
 
 #graph1 {
@@ -61,39 +62,38 @@ h1 {
 
 
 #info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 500px;
 
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0) 10%, #FFD203, #03C7F7, rgba(0, 0, 0, 0)),
-        radial-gradient(#03C7F7, #FFD203);
-
-    color: black;
     text-align: center;
     font-weight: 800;
-    font-size: 1.4em;
+    font-size: 1.8em;
 }
 
-span {
-    padding: 20px;
+#complement {
+    position: absolute;
+    right: 0;
+    top: 140px;
+    width: 600px;
+    text-align: right;
+    padding-right: 25px;
 }
 
-#currentCount {
-    font-size: 2.8em;
+.consigne {
+    text-align: right;
+    margin-right: 10px;
 }
-
-#currentYear {
-    font-size: 1.4em;
-}
-
 
 /* btn css stop animation */
 
 .btn {
     display: flex;
     justify-content: center;
+    left: 20px;
+    position: absolute;
+    bottom: 160px;
     cursor: pointer;
 }
 
@@ -102,10 +102,11 @@ span {
     text-align: center;
     color: #FFD203;
     border: white solid 1px;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 8px;
+    border-radius: 10px;
     text-transform: uppercase;
     font-weight: 800;
+    font-size: 0.8em;
 }
 
 #stopAnimationButton:hover {
@@ -171,4 +172,12 @@ span {
     top: 0;
     left: 10px;
     text-align: left;
+}
+
+
+/* css footer credits */
+
+
+footer {
+    height: 100vh;
 }
