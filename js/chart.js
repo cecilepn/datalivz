@@ -80,10 +80,40 @@
                 return '#000000';  // Couleur par défaut
             }
         });
+
+        //Change le curseur de la souris lorsqu'il survole le graphique 
+        graph1.canvas.addEventListener('mousemove', (event) => {
+            const activePoints = graph1.getElementsAtEvent(event);
+
+            if (activePoints.length > 0) {
+                graph1.canvas.style.cursor = 'pointer';
+            } else {
+                graph1.canvas.style.cursor = 'default';
+            }
+        });
+
+
+        // Affiche les données du point cliqué dans la div avec l'id "info" à la fin de l'animation
+        graph1.canvas.addEventListener('click', (event) => {
+            const activePoints = graph1.getElementsAtEvent(event);
+
+            if (activePoints.length > 0) {
+                const clickedIndex = activePoints[0]._index;
+                const clickedYear = graphData.labels[clickedIndex];
+                const clickedCount = graphData.datasets[0].data[clickedIndex];
+                const explaination = data[clickedIndex].explaination;
+
+                document.getElementById('currentYear').textContent = `${clickedYear}`;
+                document.getElementById('currentCount').textContent = `${clickedCount}`;
+                document.getElementById('explication').textContent = `${explaination}`;
+            }
+
+
+        });
     }
 
     // Mettre à jour le graphique toutes les x millisecondes (soit toutes les secondes)
-    animationInterval = setInterval(updateGraphAndInfo, 900);
+    animationInterval = setInterval(updateGraphAndInfo, 500);
 
     // Arrête l'animation
     document.getElementById('stopAnimationButton').addEventListener('click', () => {
@@ -93,6 +123,8 @@
 
         while (currentYearIndex < data.length) {
             updateGraphAndInfo();
+
+
         }
 
 
@@ -107,7 +139,7 @@
             }
         });
 
-        // Affiche les données du point cliqué dans la div avec l'id "info"
+        // Affiche les données du point cliqué dans la div avec l'id "info" après avoir arrêté l'animation
         graph1.canvas.addEventListener('click', (event) => {
             const activePoints = graph1.getElementsAtEvent(event);
 
@@ -120,6 +152,7 @@
                 document.getElementById('currentYear').textContent = `${clickedYear}`;
                 document.getElementById('currentCount').textContent = `${clickedCount}`;
                 document.getElementById('explication').textContent = `${explaination}`;
+
 
             }
 
@@ -135,4 +168,6 @@
 
     // Afficher les informations initiales
     updateGraphAndInfo();
+
+
 })();
