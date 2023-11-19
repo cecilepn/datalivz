@@ -113,7 +113,7 @@
     }
 
     // Mettre à jour le graphique toutes les x millisecondes (soit toutes les secondes)
-    animationInterval = setInterval(updateGraphAndInfo, 500);
+    animationInterval = setInterval(updateGraphAndInfo, 700);
 
     // Arrête l'animation
     document.getElementById('stopAnimationButton').addEventListener('click', () => {

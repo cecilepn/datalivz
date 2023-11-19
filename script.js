@@ -1,4 +1,5 @@
 window.onload = function () {
+    console.log("window loaded");
     setTimeout(function () {
         let opacity = 1;
         let interval = setInterval(function () {
@@ -11,6 +12,5 @@ window.onload = function () {
             opacity = opacity - opacity * 0.1;
         }, 40);
     }, 1500);
-    initialize();
     
 }
