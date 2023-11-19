@@ -12,6 +12,24 @@ section {
     height: 100vh;
 }
 
+/* css loader */
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img {
+    height: 25%;
+}
 
 /* css section présentation */
 
