@@ -59,10 +59,10 @@
         </div>
         <div id="complement"><span id="explication"></span></div>
 
-        <p class="consigne"> Cliquez sur un point coloré du graphique une fois affiché entièrement pour obtenir plus
+        <p class="consigne"> Cliquez sur un point coloré du graphique affiché entièrement pour obtenir plus
             d'informations. </p>
 
-        <div class="btn" id="stopAnimationButton">Afficher le graphique</div>
+        <div class="btn" id="stopAnimationButton">Tout afficher</div>
     </section>
 
     <!-- Section proportion âge public -->
@@ -360,24 +360,28 @@
 
     <!-- Section map sur les premières salles de cinéma -->
 
-    <section class="container">
-        <div class="map">
+    <section class="containerMap">
+        <div class="limitation">
             <div id="earth"></div>
         </div>
 
 
-        <div>
-            <div class="marker-info">
-                <h2>Informations sur la salle de cinéma sélectionné</h2>
-                <p id="cine-nom"></p>
-                <p id="cine-annee"></p>
+        <div class="marker-info">
+            <h2>Informations sur la salle de cinéma sélectionné</h2>
+            <p class="consigne"> Zoomez et cliquez sur un point de la map pour découvrir le premier cinéma du pays !</p>
+
+            <div class="blocinfo">
                 <p id="cine-ville"></p>
                 <p id="cine-pays"></p>
+                <p id="cine-nom"></p>
+                <hr>
+                <p id="cine-annee"></p>
+                <p id="cine-info"></p>
             </div>
-
-            <div class="reset" id="resetButton">Reset Map</div>
-
         </div>
+        <div class="reset" id="resetButton"> Réinitialisation vue</div>
+
+
     </section>
 
 

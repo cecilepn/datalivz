@@ -37,7 +37,7 @@ function initialize() {
 
     resetButton.addEventListener('click', function () {
         // Réinitialise la position de la carte à l'emplacement donné
-        earth.setView([0, 0], 2.4);
+        earth.setView([0, 0], 3);
 
     });
 
@@ -80,10 +80,11 @@ function initialize() {
                         // Ajout d'un événement de clic au marqueur
                         marker.on('click', function () {
                             // qui affiche les informations sur le théâtre sur la page
-                            document.getElementById('cine-nom').textContent = `Nom du cinéma: ${e.nom}`;
+                            document.getElementById('cine-nom').textContent = `Nom du cinéma : ${e.nom}`;
                             document.getElementById('cine-annee').textContent = `Année de construction : ${e.annee}`;
-                            document.getElementById('cine-ville').textContent = `Ville : ${e.ville}`;
-                            document.getElementById('cine-pays').textContent = `Pays : ${e.pays}`;
+                            document.getElementById('cine-ville').textContent = `${e.ville},`;
+                            document.getElementById('cine-pays').textContent = `${e.pays}`;
+                            document.getElementById('cine-info').textContent = `Description : ${e.desc}`;
                         });
 
                         // Indique qu'un marqueur pour ce pays a été ajouté
