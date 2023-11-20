@@ -1,5 +1,4 @@
 /* general css */
-
 body {
     margin: 0;
     background-color: #060606;
@@ -278,7 +277,7 @@ svg {
 
 .blocinfo {
     margin-top: 150px;
-    margin-left: 100px;
+    margin-left: 300px;
 }
 
 #cine-nom {
