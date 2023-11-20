@@ -68,7 +68,7 @@ section {
     width: 50px;
     height: 100%;
     object-fit: cover;
-    margin: 10px;
+    margin: 5px;
 }
 
 
@@ -150,7 +150,7 @@ h2 {
     justify-content: center;
     left: 20px;
     position: absolute;
-    bottom: 160px;
+    bottom: 40px;
     cursor: pointer;
 }
 
