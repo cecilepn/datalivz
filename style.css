@@ -8,13 +8,13 @@ body {
 }
 
 section {
-    margin-top: 80px;
+    margin-top: 100px;
     height: 100vh;
 }
 
 /* css loader */
 
-.loader {
+.loading {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,9 +27,40 @@ section {
     align-items: center;
 }
 
-.loader img {
-    height: 25%;
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255, 61, 0, 0.2) 33%, #ff3d00 100%);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
 }
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #263238;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
 
 /* css section présentation */
 
@@ -200,7 +231,7 @@ svg {
 
     border: white solid 1px;
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 70%;
     transform: translate(-60%, -65%);
 }
@@ -235,7 +266,7 @@ svg {
 .marker-info {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 20;
 }
 
 .blocinfo {
@@ -331,6 +362,7 @@ li {
 li a {
     text-decoration: none;
     color: white;
+    font-style: italic;
 }
 
 li a:hover {
@@ -353,6 +385,63 @@ li a:hover {
     list-style: circle;
 }
 
+/* social media github */
+.git {
+    position: relative;
+}
+
+
+.icon {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+
+    position: absolute;
+    bottom: -60px;
+    right: 20px;
+}
+
+.icon:hover {
+    outline-offset: 4px;
+}
+
+.icon i {
+    margin: auto;
+}
+
+.icon:hover i {
+    animation: shake 0.25s;
+}
+
+.icon--github:hover {
+    background-color: #FFD203;
+    outline-color: #FFD203;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
 
 /* viewport 768px*/
 
