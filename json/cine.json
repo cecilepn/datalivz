@@ -94,7 +94,7 @@
     "pays": "Belgique",
     "ville": "Bruxelles",
     "annee": 1905,
-    "desc": "",
+    "desc": "En 1905, le premier cinéma à part entière ouvre ses portes sous le nom de Théâtre duCinématographe. Dès le début, la salle cruciforme est à même d’accueillir 156 spectateurs.",
     "lat": 50.850346,
     "long": 4.351721
   },
@@ -103,7 +103,7 @@
     "pays": "Suisse",
     "ville": "Genève",
     "annee": 1920,
-    "desc": "",
+    "desc": "L’Alhambra est une salle de spectacle de la ville de Genève construite dans les années 1920 et classée monument historique depuis 1996.",
     "lat": 46.204391,
     "long": 6.143158
   },
@@ -111,8 +111,8 @@
     "nom": "Cine Doré",
     "pays": "Espagne",
     "ville": "Madrid",
-    "annee": 1912,
-    "desc": "",
+    "annee": 1923,
+    "desc": "Le Cine Doré est une salle de cinéma construite en 1923 et située dans le centre de Madrid, Espagne. Il abrite depuis 1989 les salles de projection officielles de la Cinémathèque espagnole, organise des conférences, diffuse des films anciens et étrangers en version originale et dispose d'une librairie spécialisée.",
     "lat": 40.416775,
     "long": -3.70379
   },
@@ -121,7 +121,7 @@
     "pays": "Portugal",
     "ville": "Lisbonne",
     "annee": 1915,
-    "desc": "",
+    "desc": "Le cinéma Condes était autrefois l'ancien Teatro da Rua dos Condes, acquis en 1915 par le distributeur Castello Lopes et converti exclusivement en salle de cinéma. Le cinéma a fermé en 1997, après avoir été converti en 2003 en l'actuel Hard Rock Café de Lisbonne.",
     "lat": 38.722252,
     "long": -9.139337
   },
@@ -136,19 +136,19 @@
   },
   {
     "nom": "Edisonia Hall",
-    "pays": "Canada",
-    "ville": "Toronto",
+    "pays": "Etats-Unis",
+    "ville": "New York",
     "annee": 1896,
-    "desc": "",
-    "lat": 43.65107,
-    "long": -79.347015
+    "desc": "Le Edisonia Hall à New York, dans l'Ellicott Square Building le 19 octobre 1896, avait la particularité d'accueillir un Vitascope Theater. Il s'agissait du premier cinéma spécifiquement construit à cet effet au monde. Le cinéma était mentionné dans les journaux de l'époque (Buffalo Express, Buffalo News, et d'autres) en tant que Vitascope Theater, Vitascope Hall et Electrical Theater.",
+    "lat": 40.712784,
+    "long": -74.005941
   },
   {
     "nom": "Gran Salon Olympia",
     "pays": "Colombie",
     "ville": "Bogota",
     "annee": 1897,
-    "desc": "",
+    "desc": "La Grande Salle Olympia était un théâtre de Bogota dédié à l'exposition de films et à des activités telles que des représentations de théâtre et d'opéra. Il pouvait accueillir 5 000 personnes. Les frères Vincenzo et Francesco Di Domenico furent chargés de sa construction et de son développement.",
     "lat": 4.60971,
     "long": -74.081749
   },
@@ -156,44 +156,44 @@
     "nom": "Salão de Novidades Paris",
     "pays": "Brésil",
     "ville": "Rio de Janeiro",
-    "annee": 1896,
-    "desc": "",
+    "annee": 1894,
+    "desc": "Le 31 juillet 1897, le Salão de Novidades Paris est ouvert à Rio de Janeiro, première salle à maintenir une programmation régulière de films. Les propriétaires étaient Paschoal Segreto et José Roberto Cunha Sales.",
     "lat": -22.906847,
     "long": -43.172897
   },
   {
-    "nom": "Yuanmingyuan",
+    "nom": "the Ping'an (Pavilion Cinema)",
     "pays": "Chine",
-    "ville": "Pékin (Beijing)",
-    "annee": 1902,
-    "desc": "",
-    "lat": 39.9042,
-    "long": 116.407396
+    "ville": "Shanghai",
+    "annee": 1935,
+    "desc": "The Ping'an est la première salle de cinéma chinoise. ",
+    "lat": 31.224361,
+    "long": 121.469170
   },
   {
-    "nom": "Majestic",
+    "nom": "Alhamra",
     "pays": "Indonésie",
     "ville": "Jakarta",
-    "annee": 1910,
-    "desc": "",
-    "lat": -6.208763,
-    "long": 106.845599
+    "annee": 1931,
+    "desc": "La première salle de cinéma de Jakarta était le théâtre Alhamra à Sawah Besar, créé en 1931. Les autres anciennes salles de cinéma de Jakarta étaient l'Astoria, le Grand, le Metropole, le Rex, le Capitole, le Rivoli, le Central et l'Orion.",
+    "lat": -6.153194,
+    "long": 106.832588
   },
   {
-    "nom": "Dansungsa",
+    "nom": "Ae Kwan",
     "pays": "Corée du Sud",
-    "ville": "Séoul",
-    "annee": 1903,
-    "desc": "",
-    "lat": 37.566535,
-    "long": 126.977969
+    "ville": "Incheon",
+    "annee": 1907,
+    "desc": "Le théâtre Ae Kwan (coréen : 애관극장) est une salle de cinéma située à Incheon, en Corée du Sud. On pense qu'il s'agit du plus ancien cinéma de Corée, fondé en 1895. On pense qu'il est antérieur à ce qui était largement considéré comme le premier cinéma, Dansungsa, fondé en 1907.",
+    "lat": 37.456257,
+    "long": 126.705208
   },
   {
-    "nom": "Auckland Opera House",
+    "nom": "St James Theatre",
     "pays": "Nouvelle-Zélande",
     "ville": "Auckland",
-    "annee": 1896,
-    "desc": "",
+    "annee": 1928,
+    "desc": "Le St James Theatre est un théâtre et un cinéma patrimoniaux situés à Auckland, en Nouvelle-Zélande. Construit en 1928, il remplaçait l'ancien opéra Fuller et était à l'origine conçu pour les numéros de vaudeville. Le théâtre est fermé depuis 2007 après qu'un incendie ait soulevé des inquiétudes quant à la sécurité et à la conformité.",
     "lat": -36.848461,
     "long": 174.763336
   },
@@ -211,7 +211,7 @@
     "pays": "Grèce",
     "ville": "Athènes",
     "annee": 1907,
-    "desc": "",
+    "desc": "Au printemps 1897, les Grecs d'Athènes assistent aux premières aventures cinématographiques (courts métrages en « journal »). En 1906, le cinéma grec est né lorsque les frères Manakis ont commencé à enregistrer en Macédoine et que le cinéaste français « Léons » a produit le premier « Journal télévisé » des Jeux olympiques midi d'Athènes (les jeux olympiques non officiels de 1906). Le premier cinéma d'Athènes a ouvert ses portes en 1907 et d'autres « salles de projection » spéciales ont commencé leur activité.",
     "lat": 37.98381,
     "long": 23.727539
   },
@@ -220,21 +220,12 @@
     "pays": "Argentine",
     "ville": "Buenos Aires",
     "annee": 1896,
-    "desc": "",
+    "desc": "Le Théâtre Odéon a été construit par Don Emilio Bieckert à la fin du XIXe siècle. En juillet 1896, il accueillit la toute première projection de film en Argentine. Il a été démoli en 1991 afin de laisser place à la construction d'un parking.",
     "lat": -34.611778,
     "long": -58.417306
   },
   {
-    "nom": "Sark Cinema",
-    "pays": "Turquie",
-    "ville": "Istanbul",
-    "annee": 1896,
-    "desc": "",
-    "lat": 41.008238,
-    "long": 28.978359
-  },
-  {
-    "nom": "Azbekiya Garden",
+    "nom": "Azbekiya Teatro Garden",
     "pays": "Egypte",
     "ville": "Caire",
     "annee": 1896,
