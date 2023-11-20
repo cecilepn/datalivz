@@ -82,7 +82,7 @@ function initialize() {
                             // qui affiche les informations sur le théâtre sur la page
                             document.getElementById('cine-ville').textContent = `${e.ville},`;
                             document.getElementById('cine-pays').textContent = `${e.pays}`;
-                            document.getElementById('cine-nom').textContent = `Nom du cinéma : ${e.nom}`;
+                            document.getElementById('cine-nom').textContent = `${e.nom}`;
                             document.getElementById('cine-annee').textContent = `Année de construction : ${e.annee}`;
                             document.getElementById('cine-info').textContent = `Description : ${e.desc}`;
                         });

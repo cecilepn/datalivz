@@ -134,12 +134,12 @@ h2 {
     width: 600px;
     text-align: right;
     padding-right: 25px;
+    color: #FFD203;
 }
 
 .consigne {
     text-align: right;
     margin-right: 10px;
-
 }
 
 
@@ -150,7 +150,7 @@ h2 {
     justify-content: center;
     left: 20px;
     position: absolute;
-    bottom: 40px;
+    bottom: 90px;
     cursor: pointer;
 }
 
@@ -290,6 +290,10 @@ svg {
 #cine-annee,
 #cine-info {
     color: #FFD203;
+}
+
+#cine-info {
+    width: 600px;
 }
 
 

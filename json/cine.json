@@ -4,7 +4,7 @@
     "pays": "Japon",
     "ville": "Tokyo",
     "annee": 1903,
-    "desc": "heoh",
+    "desc": "Le Denkikan est la première salle de cinéma au Japon. À l'origine, le bâtiment a été construit dans le quartier des théâtres de l'arrondissement Asakusa de Tokyo afin de présenter des spectacles mettant en vedette l'électricité (« denki » en japonais). Il a été ensuite transformé en une salle de cinéma en octobre 1903 par la Yoshizawa Shōten, la société cinématographique la plus prospère à l'époque.",
     "lat": 35.682839,
     "long": 139.759455
   },
@@ -13,6 +13,7 @@
     "pays": "Australie",
     "ville": "Sydney",
     "annee": 1929,
+    "desc": "Le 10 juin 1929, la première projection publique d'un « talkie » (film animé avec son synchrone) dans un cinéma de la banlieue de Sydney a eu lieu au Wintergarden Theatre de Rose Bay. L'événement était la première démonstration publique du système audio australien Raycophone et a contribué à ouvrir la voie à l'adoption rapide d'une nouvelle technologie par l'industrie cinématographique dans le secteur suburbain et régional.",
     "lat": -33.865143,
     "long": 151.2099
   },
@@ -21,14 +22,7 @@
     "pays": "France",
     "ville": "Paris",
     "annee": 1907,
-    "lat": 48.856613,
-    "long": 2.352222
-  },
-  {
-    "nom": "Le Grand Café",
-    "pays": "France",
-    "ville": "Paris",
-    "annee": 1895,
+    "desc": "Le cinéma du Panthéon est une salle de cinéma indépendante d'Art et Essai située dans le quartier de la Sorbonne du 5e arrondissement de Paris, près de la place du Panthéon de laquelle il tient son nom. Ouvert en 1907, il s'agit de l'un des cinémas, encore en activité, les plus anciens de Paris.",
     "lat": 48.856613,
     "long": 2.352222
   },
@@ -37,6 +31,7 @@
     "pays": "France",
     "ville": "La Ciotat",
     "annee": 1889,
+    "desc": "L’Eden Théâtre est un cinéma français situé à La Ciotat, dans le département des Bouches-du-Rhône, inauguré comme théâtre le 15 juin 1889. La date du 21 mars 1899 est reconnue pour être celle de la première séance payante de cinéma à l’Eden Théâtre. L’Eden Théâtre est aujourd'hui la plus ancienne salle de cinéma en activité dans le monde, inscrite au Guinness World Records avec une ancienneté de 122 ans et 102 jours au 1er juillet 2021.",
     "lat": 43.173227,
     "long": 5.608155
   },
@@ -45,6 +40,7 @@
     "pays": "Thailand",
     "ville": "Bangkok",
     "annee": 1969,
+    "desc": "",
     "lat": 13.756331,
     "long": 100.501762
   },
@@ -53,6 +49,7 @@
     "pays": "Inde",
     "ville": "Mumbai",
     "annee": 1928,
+    "desc": "",
     "lat": 19.07609,
     "long": 72.877426
   },
@@ -61,6 +58,7 @@
     "pays": "Pologne",
     "ville": "Szczecin",
     "annee": 1909,
+    "desc": "",
     "lat": 53.428543,
     "long": 14.552812
   },
@@ -69,6 +67,7 @@
     "pays": "Royaume-Uni",
     "ville": "Londres",
     "annee": 1896,
+    "desc": "",
     "lat": 51.507351,
     "long": -0.127758
   },
@@ -77,6 +76,7 @@
     "pays": "Allemagne",
     "ville": "Berlin-Kreuzberg",
     "annee": 1907,
+    "desc": "",
     "lat": 52.520008,
     "long": 13.404954
   },
@@ -85,6 +85,7 @@
     "pays": "Italie",
     "ville": "Tuscany",
     "annee": 1836,
+    "desc": "",
     "lat": 43.76956,
     "long": 11.255814
   },
@@ -93,6 +94,7 @@
     "pays": "Belgique",
     "ville": "Bruxelles",
     "annee": 1905,
+    "desc": "",
     "lat": 50.850346,
     "long": 4.351721
   },
@@ -101,6 +103,7 @@
     "pays": "Suisse",
     "ville": "Genève",
     "annee": 1920,
+    "desc": "",
     "lat": 46.204391,
     "long": 6.143158
   },
@@ -109,6 +112,7 @@
     "pays": "Espagne",
     "ville": "Madrid",
     "annee": 1912,
+    "desc": "",
     "lat": 40.416775,
     "long": -3.70379
   },
@@ -117,6 +121,7 @@
     "pays": "Portugal",
     "ville": "Lisbonne",
     "annee": 1915,
+    "desc": "",
     "lat": 38.722252,
     "long": -9.139337
   },
@@ -125,6 +130,7 @@
     "pays": "Mexique",
     "ville": "México",
     "annee": 1896,
+    "desc": "",
     "lat": 19.432608,
     "long": -99.133209
   },
@@ -133,6 +139,7 @@
     "pays": "Canada",
     "ville": "Toronto",
     "annee": 1896,
+    "desc": "",
     "lat": 43.65107,
     "long": -79.347015
   },
@@ -141,6 +148,7 @@
     "pays": "Colombie",
     "ville": "Bogota",
     "annee": 1897,
+    "desc": "",
     "lat": 4.60971,
     "long": -74.081749
   },
@@ -149,6 +157,7 @@
     "pays": "Brésil",
     "ville": "Rio de Janeiro",
     "annee": 1896,
+    "desc": "",
     "lat": -22.906847,
     "long": -43.172897
   },
@@ -157,6 +166,7 @@
     "pays": "Chine",
     "ville": "Pékin (Beijing)",
     "annee": 1902,
+    "desc": "",
     "lat": 39.9042,
     "long": 116.407396
   },
@@ -165,6 +175,7 @@
     "pays": "Indonésie",
     "ville": "Jakarta",
     "annee": 1910,
+    "desc": "",
     "lat": -6.208763,
     "long": 106.845599
   },
@@ -173,6 +184,7 @@
     "pays": "Corée du Sud",
     "ville": "Séoul",
     "annee": 1903,
+    "desc": "",
     "lat": 37.566535,
     "long": 126.977969
   },
@@ -181,6 +193,7 @@
     "pays": "Nouvelle-Zélande",
     "ville": "Auckland",
     "annee": 1896,
+    "desc": "",
     "lat": -36.848461,
     "long": 174.763336
   },
@@ -189,6 +202,7 @@
     "pays": "Russie",
     "ville": "Saint-Pétersbourg",
     "annee": 1896,
+    "desc": "",
     "lat": 59.93428,
     "long": 30.335099
   },
@@ -197,6 +211,7 @@
     "pays": "Grèce",
     "ville": "Athènes",
     "annee": 1907,
+    "desc": "",
     "lat": 37.98381,
     "long": 23.727539
   },
@@ -205,6 +220,7 @@
     "pays": "Argentine",
     "ville": "Buenos Aires",
     "annee": 1896,
+    "desc": "",
     "lat": -34.611778,
     "long": -58.417306
   },
@@ -213,6 +229,7 @@
     "pays": "Turquie",
     "ville": "Istanbul",
     "annee": 1896,
+    "desc": "",
     "lat": 41.008238,
     "long": 28.978359
   },
@@ -221,6 +238,7 @@
     "pays": "Egypte",
     "ville": "Caire",
     "annee": 1896,
+    "desc": "",
     "lat": 30.04442,
     "long": 31.235712
   },
@@ -229,6 +247,7 @@
     "pays": "Maroc",
     "ville": "Casablanca",
     "annee": 1907,
+    "desc": "",
     "lat": 34.020882,
     "long": -6.84165
   },
@@ -237,6 +256,7 @@
     "pays": "Suède",
     "ville": "Stockholm",
     "annee": 1896,
+    "desc": "",
     "lat": 59.329323,
     "long": 18.068581
   },
@@ -245,6 +265,7 @@
     "pays": "Danemark",
     "ville": "Copenhague",
     "annee": 1904,
+    "desc": "",
     "lat": 55.676098,
     "long": 12.568337
   },
@@ -253,6 +274,7 @@
     "pays": "Norvège",
     "ville": "Oslo",
     "annee": 1905,
+    "desc": "",
     "lat": 59.913869,
     "long": 10.752245
   },
@@ -261,6 +283,7 @@
     "pays": "Etats-Unis",
     "ville": "Nouvelle-Orléans",
     "annee": 1896,
+    "desc": "",
     "lat": 29.951065,
     "long": -90.071533
   },
@@ -269,6 +292,7 @@
     "pays": "Sénégal",
     "ville": "Dakar",
     "annee": 1913,
+    "desc": "",
     "lat": 14.692778,
     "long": -17.446667
   },
@@ -277,6 +301,7 @@
     "pays": "Tunisie",
     "ville": "Tunis",
     "annee": 1907,
+    "desc": "",
     "lat": 34.746611,
     "long": 10.761329
   },
@@ -285,6 +310,7 @@
     "pays": "Algérie",
     "ville": "Oran",
     "annee": 1907,
+    "desc": "",
     "lat": 35.691405,
     "long": -0.641831
   },
@@ -293,6 +319,7 @@
     "pays": "Algérie (Kabylie)",
     "ville": "Tizi Ouzou",
     "annee": 1927,
+    "desc": "",
     "lat": 36.715697,
     "long": 4.051625
   },
@@ -301,6 +328,7 @@
     "pays": "Etats-Unis (Hollywood)",
     "ville": "Los Angeles",
     "annee": 1922,
+    "desc": "",
     "lat": 34.052235,
     "long": -118.243683
   },
@@ -309,6 +337,7 @@
     "pays": "Iran",
     "ville": "Téhéran",
     "annee": 1900,
+    "desc": "",
     "lat": 35.689487,
     "long": 51.394771
   },
@@ -317,6 +346,7 @@
     "pays": "Malaisie",
     "ville": "Kuala Lumpur",
     "annee": 1921,
+    "desc": "",
     "lat": 3.139003,
     "long": 101.686855
   },
@@ -325,6 +355,7 @@
     "pays": "Singapour",
     "ville": "Singapour",
     "annee": 1939,
+    "desc": "",
     "lat": 1.352083,
     "long": 103.819836
   },
@@ -333,6 +364,7 @@
     "pays": "Vietnam",
     "ville": "Hanoi",
     "annee": 1911,
+    "desc": "",
     "lat": 21.028521,
     "long": 105.854204
   },
@@ -341,6 +373,7 @@
     "pays": "Pakistan",
     "ville": "Karachi",
     "annee": 1932,
+    "desc": "",
     "lat": 24.860735,
     "long": 67.001137
   },
@@ -349,6 +382,7 @@
     "pays": "Nigeria",
     "ville": "Lagos",
     "annee": 1903,
+    "desc": "",
     "lat": 6.524379,
     "long": 3.379206
   },
@@ -357,6 +391,7 @@
     "pays": "Ghana",
     "ville": "Accra",
     "annee": 1932,
+    "desc": "",
     "lat": 5.560014,
     "long": -0.205744
   },
@@ -365,6 +400,7 @@
     "pays": "Afrique du Sud",
     "ville": "Cap",
     "annee": 1896,
+    "desc": "",
     "lat": -33.92487,
     "long": 18.424055
   },
@@ -373,6 +409,7 @@
     "pays": "Kenya",
     "ville": "Nairobi",
     "annee": 1908,
+    "desc": "",
     "lat": -1.286389,
     "long": 36.817223
   },
@@ -381,6 +418,7 @@
     "pays": "Ethiopie",
     "ville": "Addis-Abeba",
     "annee": 1935,
+    "desc": "",
     "lat": 9.145,
     "long": 38.75
   },
@@ -389,6 +427,7 @@
     "pays": "Cuba",
     "ville": "La Havane",
     "annee": 1900,
+    "desc": "",
     "lat": 23.113592,
     "long": -82.366592
   },
@@ -397,6 +436,7 @@
     "pays": "Jamaïque",
     "ville": "Kingston",
     "annee": 1907,
+    "desc": "",
     "lat": 17.970431,
     "long": -76.79321
   },
@@ -405,6 +445,7 @@
     "pays": "Réunion",
     "ville": "Saint-Denis",
     "annee": 1912,
+    "desc": "",
     "lat": -20.878407,
     "long": 55.448328
   },
@@ -413,6 +454,7 @@
     "pays": "Chypre",
     "ville": "Nicosie",
     "annee": 1930,
+    "desc": "",
     "lat": 35.185565,
     "long": 33.382391
   },
@@ -421,6 +463,7 @@
     "pays": "Tahiti",
     "ville": "Papeete",
     "annee": 1935,
+    "desc": "",
     "lat": -17.535,
     "long": -149.569722
   },
@@ -429,6 +472,7 @@
     "pays": "Madagascar",
     "ville": "Antananarivo",
     "annee": 1924,
+    "desc": "",
     "lat": -18.87919,
     "long": 47.507905
   },
@@ -437,6 +481,7 @@
     "pays": "Hawaï",
     "ville": "Honolulu",
     "annee": 1906,
+    "desc": "",
     "lat": 21.306944,
     "long": -157.858333
   },
@@ -445,6 +490,7 @@
     "pays": "Philippines",
     "ville": "Manille",
     "annee": 1901,
+    "desc": "",
     "lat": 14.599512,
     "long": 120.984222
   },
@@ -453,6 +499,7 @@
     "pays": "Birmanie",
     "ville": "Rangoun",
     "annee": 1922,
+    "desc": "",
     "lat": 16.866069,
     "long": 96.195132
   },
@@ -461,6 +508,7 @@
     "pays": "Laos",
     "ville": "Vientiane",
     "annee": 1954,
+    "desc": "",
     "lat": 17.975706,
     "long": 102.633104
   },
@@ -469,6 +517,7 @@
     "pays": "Brunei",
     "ville": "Bandar Seri Begawan",
     "annee": 1953,
+    "desc": "",
     "lat": 4.88573,
     "long": 114.931514
   },
@@ -477,6 +526,7 @@
     "pays": "Chili",
     "ville": "Santiago",
     "annee": 1898,
+    "desc": "",
     "lat": -33.44889,
     "long": -70.669265
   },
@@ -485,6 +535,7 @@
     "pays": "Pérou",
     "ville": "Lima",
     "annee": 1904,
+    "desc": "",
     "lat": -12.046374,
     "long": -77.042793
   },
@@ -493,6 +544,7 @@
     "pays": "Venezuela",
     "ville": "Caracas",
     "annee": 1904,
+    "desc": "",
     "lat": 10.48801,
     "long": -66.87919
   },
@@ -501,6 +553,7 @@
     "pays": "Uruguay",
     "ville": "Montevideo",
     "annee": 1905,
+    "desc": "",
     "lat": -34.901112,
     "long": -56.191997
   },
@@ -509,6 +562,7 @@
     "pays": "Paraguay",
     "ville": "Asucion",
     "annee": 1900,
+    "desc": "",
     "lat": -25.263739,
     "long": -57.575926
   },
@@ -517,6 +571,7 @@
     "pays": "Equateur",
     "ville": "Quito",
     "annee": 1905,
+    "desc": "",
     "lat": -0.229498,
     "long": -78.524272
   },
@@ -525,6 +580,7 @@
     "pays": "Bolivie",
     "ville": "La Paz",
     "annee": 1905,
+    "desc": "",
     "lat": -16.5,
     "long": -68.119293
   },
@@ -533,6 +589,7 @@
     "pays": "Costa Rica",
     "ville": "San José",
     "annee": 1897,
+    "desc": "",
     "lat": 9.928069,
     "long": -84.090725
   },
@@ -541,6 +598,7 @@
     "pays": "Guatemala",
     "ville": "Guatemala city",
     "annee": 1906,
+    "desc": "",
     "lat": 14.634915,
     "long": -90.506882
   },
@@ -549,6 +607,7 @@
     "pays": "Salvador",
     "ville": "San Salvador",
     "annee": 1917,
+    "desc": "",
     "lat": 13.69373,
     "long": -89.190791
   },
@@ -557,6 +616,7 @@
     "pays": "Nicaragua",
     "ville": "Managua",
     "annee": 1900,
+    "desc": "",
     "lat": 12.136389,
     "long": -86.251389
   },
@@ -565,6 +625,7 @@
     "pays": "Panama",
     "ville": "Panama City",
     "annee": 1905,
+    "desc": "",
     "lat": 8.982379,
     "long": -79.51987
   },
@@ -573,6 +634,7 @@
     "pays": "Belize",
     "ville": "Belize City",
     "annee": 1910,
+    "desc": "",
     "lat": 17.501632,
     "long": -88.196212
   }
