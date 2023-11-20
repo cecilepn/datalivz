@@ -273,11 +273,12 @@ svg {
 .marker-info {
     position: absolute;
     right: 0;
-    top: 20;
+    top: 50;
 }
 
 .blocinfo {
-    margin-top: 200px;
+    margin-top: 150px;
+    margin-left: 100px;
 }
 
 #cine-nom {

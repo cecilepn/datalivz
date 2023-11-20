@@ -84,7 +84,7 @@ function initialize() {
                             document.getElementById('cine-pays').textContent = `${e.pays}`;
                             document.getElementById('cine-nom').textContent = `${e.nom}`;
                             document.getElementById('cine-annee').textContent = `Année de construction : ${e.annee}`;
-                            document.getElementById('cine-info').textContent = `Description : ${e.desc}`;
+                            document.getElementById('cine-info').textContent = `${e.desc}`;
                         });
 
                         // Indique qu'un marqueur pour ce pays a été ajouté
