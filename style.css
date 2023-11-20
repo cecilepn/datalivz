@@ -264,22 +264,12 @@ svg {
 
 
 
-hr {
-    position: absolute;
-    left: 0;
-    height: 1px;
-    width: 600px;
-    background-color: #FF4200;
-    border: none;
-}
-
-
 /* css btn réinitialisation vue map */
 
 .reset {
     cursor: pointer;
     position: absolute;
-    left: 40%;
+    left: 45%;
     bottom: 100px;
     text-align: right;
 
@@ -304,12 +294,65 @@ hr {
 }
 
 
-/* css footer credits */
-
+/* css footer mentions légales et crédits */
 
 footer {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+h4 {
+    font-size: 7rem;
+    font-weight: 900;
+    color: #FFD203;
+    text-align: center;
+    margin: 0;
+}
+
+.ss-tt {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #FFD203;
+}
+
+.container-footer {
+    display: flex;
+}
+
+li {
+    text-transform: uppercase;
+    list-style: none;
+
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: #FFD203;
+    text-decoration: underline;
+}
+
+.bloc {
+    width: 450px;
+    padding-right: 20px;
+}
+
+.un,
+.deux {
+    border-right: white solid 1px;
+}
+
+.nm {
+    text-transform: capitalize;
+    list-style: circle;
+}
+
 
 /* viewport 768px*/
 
