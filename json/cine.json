@@ -40,7 +40,7 @@
     "pays": "Thailand",
     "ville": "Bangkok",
     "annee": 1969,
-    "desc": "",
+    "desc": " Le Scala a ouvert ses portes le 31 décembre 1969 avec la projection du film The Undefeated (1969), un western américain avec John Wayne et Rock Hudson. Il a fermé ses portes le 5 juillet 2020, présentant, comme dernier film, Cinema Paradiso. Le Scala, qualifié de 'la meilleure salle de cinéma restante en Asie du Sud-Est', était le dernier cinéma indépendant à Bangkok, réduisant ainsi le nombre d'environ 140 salles de cinéma dans les années 1950 et 1960.",
     "lat": 13.756331,
     "long": 100.501762
   },
@@ -49,7 +49,7 @@
     "pays": "Inde",
     "ville": "Mumbai",
     "annee": 1928,
-    "desc": "",
+    "desc": "Le Capitol Cinema est l'un des plus anciens cinémas de Mumbai. C'est une structure victorienne classée au patrimoine de grade II construite en 1879. À l'origine, il s'agissait d'un théâtre dédié aux arts de la scène, connu sous le nom de Tivoli, mais il a été renommé Capitol en 1928 lors de sa conversion en cinéma. Avant son changement de nom pour Capitol, il était connu sous le nom de Gaiety Theatre.",
     "lat": 19.07609,
     "long": 72.877426
   },
@@ -57,8 +57,8 @@
     "nom": "Kino Pionier",
     "pays": "Pologne",
     "ville": "Szczecin",
-    "annee": 1909,
-    "desc": "",
+    "annee": 1907,
+    "desc": "Pionier 1909 devenu Pionier 1907 a reçu le titre de cinéma le plus ancien encore en activité. Le Livre Guinness des Records l'a confirmé en 2005. Cependant, le Cinéma Pionier a cessé d'être le pionnier officiel en 2021 lorsqu'il s'est avéré que le Théâtre Eden de La Ciotat, près de Marseille, remplissait déjà ces conditions en 1899.",
     "lat": 53.428543,
     "long": 14.552812
   },
@@ -66,8 +66,8 @@
     "nom": "Regent Street Cinema",
     "pays": "Royaume-Uni",
     "ville": "Londres",
-    "annee": 1896,
-    "desc": "",
+    "annee": 1848,
+    "desc": "Le Regent Street Cinema est un cinéma indépendant britannique situé sur Regent Street, à Londres. Ouvert en 1848 et considéré comme 'le berceau du cinéma britannique', le cinéma a présenté le premier film en mouvement montré au Royaume-Uni. Aujourd'hui, le cinéma projette à la fois des films indépendants et des films de studio en plein cœur de Londres.",
     "lat": 51.507351,
     "long": -0.127758
   },
@@ -76,7 +76,7 @@
     "pays": "Allemagne",
     "ville": "Berlin-Kreuzberg",
     "annee": 1907,
-    "desc": "",
+    "desc": "Le Moviemento est un cinéma basé à Berlin, situé à Kottbusser Damm dans le quartier de Berlin-Kreuzberg. Il a ouvert ses portes en 1907 et est le plus ancien cinéma encore en activité en Allemagne. La caractéristique unique de l'architecture d'origine était les deux salles de cinéma adjacentes l'une à l'autre avec un angle de 45 degrés. Grâce à une construction de miroirs spéciale, les deux salles pouvaient projeter des films en même temps.",
     "lat": 52.520008,
     "long": 13.404954
   },
@@ -85,7 +85,7 @@
     "pays": "Italie",
     "ville": "Tuscany",
     "annee": 1836,
-    "desc": "",
+    "desc": "Le Teatro Dante est un théâtre et cinéma italien inauguré le 1er septembre 1836 et était à l'origine connu sous le nom de Théâtre Royal Dante (Regio Teatro Dante). Le bâtiment a commencé comme un simple théâtre pour le peuple, aujourd'hui c'est aussi une salle de cinéma, ce qui n'empêche pas une saison théâtrale avec des comédies, des opérettes et des concerts de bon niveau.",
     "lat": 43.76956,
     "long": 11.255814
   },
@@ -549,15 +549,6 @@
     "long": -66.87919
   },
   {
-    "nom": "Teatro Salon de la Florida",
-    "pays": "Uruguay",
-    "ville": "Montevideo",
-    "annee": 1905,
-    "desc": "",
-    "lat": -34.901112,
-    "long": -56.191997
-  },
-  {
     "nom": "Teatro Nacional",
     "pays": "Paraguay",
     "ville": "Asucion",
@@ -585,20 +576,11 @@
     "long": -68.119293
   },
   {
-    "nom": "Salon Dorado",
-    "pays": "Costa Rica",
-    "ville": "San José",
-    "annee": 1897,
-    "desc": "",
-    "lat": 9.928069,
-    "long": -84.090725
-  },
-  {
     "nom": "Cine Lux",
     "pays": "Guatemala",
     "ville": "Guatemala city",
     "annee": 1906,
-    "desc": "",
+    "desc": "L'un des plus anciens cinémas de la capitale. Beaux espaces ouverts avec un design art déco espagnol. Autrefois théâtre et cinéma, aujourd'hui ouvert à diverses fins et abritant également le centre culturel espagnol.",
     "lat": 14.634915,
     "long": -90.506882
   },
@@ -606,36 +588,18 @@
     "nom": "Teatro Presidente",
     "pays": "Salvador",
     "ville": "San Salvador",
-    "annee": 1917,
-    "desc": "",
+    "annee": 1971,
+    "desc": "Le Teatro Presidente a été inauguré dans l'après-midi du 1er décembre 1971, sous le commandement du président de la République du Salvador de l'époque, Fidel Sánchez Hernández, et de son cabinet gouvernemental. Il était initialement prévu pour servir de lieu à des événements gouvernementaux, tels que la passation du gouvernement, les réunions de l'Assemblée législative ou la formation des fonctionnaires. Cependant, à la fin des années 1970 et au cours des années 1980, elle servait de salle de cinéma et de théâtre",
     "lat": 13.69373,
     "long": -89.190791
-  },
-  {
-    "nom": "Cine Variedades",
-    "pays": "Nicaragua",
-    "ville": "Managua",
-    "annee": 1900,
-    "desc": "",
-    "lat": 12.136389,
-    "long": -86.251389
   },
   {
     "nom": "Teatro Variedades",
     "pays": "Panama",
     "ville": "Panama City",
     "annee": 1905,
-    "desc": "",
+    "desc": "Le Teatro Variedades est un théâtre et une salle de cinéma situés dans la ville de Panama, déclarés monument historique du Panama.",
     "lat": 8.982379,
     "long": -79.51987
-  },
-  {
-    "nom": "Colonial Theatre",
-    "pays": "Belize",
-    "ville": "Belize City",
-    "annee": 1910,
-    "desc": "",
-    "lat": 17.501632,
-    "long": -88.196212
   }
 ]
