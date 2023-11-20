@@ -21,7 +21,13 @@
     <!-- web GL earth api -->
     <script defer src="https://www.webglearth.com/v2/api.js"></script>
 
-
+    <!-- CDN jquery scrollify  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.js"
+        integrity="sha512-2rSKyHme2mrplfIGsA8bFYAYddQ66qR+Dh71OrNZsZOtMdCYa8V1lJvl2mr/qzwcMIs20ddYz4JLiBmwS2K7Iw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -34,14 +40,14 @@
         <img src="img/logo.svg" alt="" class="logo">
     </div>
 
-    <section class="titre">
+    <section class="titre scrollify">
         <h1>Cineviz</h1>
         <p> Présente <span class="text"> <br> Un projet dataviz sur la frequentation des cinemas </span> </p>
 
     </section>
 
     <!-- Section fréquentation des salles de cinéma -->
-    <section class="frequentation">
+    <section class="frequentation scrollify">
 
         <h2>Fréquentation des salles de cinéma en France de 1943 à 2022 </h2>
 
@@ -64,7 +70,7 @@
 
     <!-- Section proportion âge public -->
 
-    <section>
+    <section class="scrollify">
 
         <h3> Quel âge a le public français ?</h3>
 
@@ -357,7 +363,7 @@
 
     <!-- Section map sur les premières salles de cinéma -->
 
-    <section class="containerMap">
+    <section class="containerMap scrollify">
         <div class="limitation">
             <div id="earth"></div>
         </div>
@@ -365,7 +371,7 @@
 
         <div class="marker-info">
             <h3>Découvrez un cinéma historique du pays de votre choix</h3>
-            <p class="consigne"> Zoomez et cliquez sur un point de la map pour découvrir le premier cinéma du pays !</p>
+            <p class="consigne"> Glissez la map et cliquez sur un point de la map pour découvrir le premier cinéma du pays !</p>
 
             <div class="blocinfo">
                 <p id="cine-ville"></p>
@@ -381,7 +387,7 @@
     </section>
 
 
-    <footer>
+    <section class="scrollify">
 
         <div>
             <h4> CINEVIZ </h4>
@@ -539,7 +545,7 @@
         </div>
 
 
-    </footer>
+    </section>
 
 
     <script src="script.js"></script>

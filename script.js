@@ -17,3 +17,12 @@ window.onload = function () {
         }, 60);
     }, 1000);
 }
+
+// Scrollify 
+
+$(function () {
+    $.scrollify({
+        section: ".scrollify",
+        scrollSpeed: 1500,
+    });
+});

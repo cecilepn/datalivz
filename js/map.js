@@ -18,6 +18,10 @@ function initialize() {
     // Création d'une nouvelle carte avec Windy API 
     var earth = new WE.map('earth', { atmosphere: true, sky: false, dragging: true });
 
+    // Positionne de la carte à l'emplacement donné
+    earth.setView([0, 0], 3);
+
+
     // Personnalisation de la carte en utilisant un thème sombre
     WE.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {}).addTo(earth);
 
