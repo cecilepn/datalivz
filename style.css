@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background-color: #010101;
+    background-color: #060606;
     font-family: 'Satoshi', sans-serif;
     color: white;
 }
@@ -189,8 +189,7 @@ h3 {
 
 .fauteuil {
     margin: 0;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: 1.2em;
     color: #FFD203;
 }
 
