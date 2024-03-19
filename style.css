@@ -211,6 +211,7 @@ h3 {
 
 .contBtn {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -268,22 +269,21 @@ svg {
 }
 
 .positionnement h3 {
-  text-align: right;
-}
-
-.marker-info {
-  position: absolute;
-  right: 0;
+  margin: 0;
 }
 
 .sousConsigne {
   font-size: 1.2em;
-  text-align: right;
 }
 
 .blocinfo {
-  margin-top: 150px;
-  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.marker-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 #cine-nom {
@@ -314,8 +314,6 @@ svg {
 
 .reset {
   cursor: pointer;
-  position: absolute;
-  left: 45%;
   bottom: 100px;
   text-align: right;
 }
@@ -364,6 +362,7 @@ h4 {
 
 .container-footer {
   display: flex;
+  flex-wrap: wrap;
 }
 
 li {
@@ -457,8 +456,21 @@ li a:hover {
 /* viewport 768px*/
 
 @media (max-width: 900px) {
+  section {
+    margin-top: 200px;
+  }
+  h1,
+  h4 {
+    font-size: 4rem;
+    text-align: center;
+  }
   h2 {
     font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    text-align: center;
   }
 
   #info {
@@ -473,16 +485,26 @@ li a:hover {
     padding-right: 10px;
   }
 
-  .consigne {
-    position: absolute;
-    right: 0;
-    width: 400px;
+  .containerMap {
+    flex-direction: column-reverse;
+  }
+
+  .positionnement {
+    margin-right: 0;
+    text-align: center;
+  }
+  .blocinfo {
+    text-align: center;
   }
 }
 
 /* viewport 688px*/
 
 @media (max-width: 688px) {
+  h1,
+  h4 {
+    font-size: 3rem;
+  }
   h2 {
     font-size: 1em;
   }
