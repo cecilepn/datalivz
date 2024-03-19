@@ -1,506 +1,501 @@
 /* general css */
 
 body {
-    margin: 0;
-    background-color: #060606;
-    font-family: 'Satoshi', sans-serif;
-    color: white;
+  margin: 0;
+  background-color: #060606;
+  font-family: "Satoshi", sans-serif;
+  color: white;
 }
 
 section {
-    margin-top: 100px;
-    height: 100vh;
+  margin-top: 100px;
+  height: 100vh;
 }
 
 /* css loader */
 
 .loading {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: #010101;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #010101;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader {
-    width: 8px;
-    height: 40px;
-    border-radius: 4px;
-    display: block;
-    margin: 20px auto;
-    position: relative;
-    background: currentColor;
-    color: #FF4200;
-    box-sizing: border-box;
-    animation: animloader 0.3s 0.3s linear infinite alternate;
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  background: currentColor;
+  color: #ff4200;
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
 }
 
 .loader::after,
 .loader::before {
-    content: '';
-    width: 8px;
-    height: 40px;
-    border-radius: 4px;
-    background: currentColor;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 20px;
-    box-sizing: border-box;
-    animation: animloader 0.5s 0.45s linear infinite alternate;
+  content: "";
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: currentColor;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  box-sizing: border-box;
+  animation: animloader 0.5s 0.45s linear infinite alternate;
 }
 
 .loader::before {
-    left: -20px;
-    animation-delay: 1s;
+  left: -20px;
+  animation-delay: 1s;
 }
 
 @keyframes animloader {
-    0% {
-        height: 48px
-    }
+  0% {
+    height: 48px;
+  }
 
-    100% {
-        height: 4px
-    }
+  100% {
+    height: 4px;
+  }
 }
 
 /* css section présentation */
 
 .logo {
-    width: 50px;
-    height: 100%;
-    object-fit: cover;
-    margin: 5px;
+  width: 50px;
+  height: 100%;
+  object-fit: cover;
+  margin: 5px;
 }
 
-
 .titre {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    background: linear-gradient(144deg, rgba(255, 66, 0, 1) 14%, rgba(0, 0, 0, 0.8169861694677871) 37%, rgba(0, 0, 0, 0.6853335084033614) 60%, rgba(255, 66, 0, 1) 78%);
+  background: linear-gradient(
+    144deg,
+    rgba(255, 66, 0, 1) 14%,
+    rgba(0, 0, 0, 0.8169861694677871) 37%,
+    rgba(0, 0, 0, 0.6853335084033614) 60%,
+    rgba(255, 66, 0, 1) 78%
+  );
 
-    color: #FFD203;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
+  color: #ffd203;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }
 
 h1 {
-    font-size: 6rem;
-    font-weight: 900;
-    margin: 0;
+  font-size: 6rem;
+  font-weight: 900;
+  margin: 0;
 }
-
 
 .text {
-    font-size: 1.7em;
-    font-weight: 600;
+  font-size: 1.7em;
+  font-weight: 600;
 }
-
 
 /* graphique fréquentation  css */
 
 .frequentation {
-    position: relative;
+  position: relative;
 }
 
 h2 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 #graph1 {
-    height: 500px;
+  height: 500px;
 }
 
-
 #info {
-    position: absolute;
-    right: 0;
-    top: 80px;
-    width: 500px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 500px;
 
-    text-align: center;
-    font-weight: 800;
-    font-size: 1.8em;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.8em;
 }
 
 #complement {
-    position: absolute;
-    right: 0;
-    top: 140px;
-    width: 600px;
-    text-align: right;
-    padding-right: 25px;
-    color: #FFD203;
+  position: absolute;
+  right: 0;
+  top: 140px;
+  width: 600px;
+  text-align: right;
+  padding-right: 25px;
+  color: #ffd203;
+}
+
+.bloc-bas {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .consigne {
-    text-align: right;
-    margin-right: 10px;
+  font-size: 1.2em;
+  max-width: 600px;
+  text-align: right;
 }
-
 
 /* btn css stop animation */
 
 .btn {
-    display: flex;
-    justify-content: center;
-    left: 20px;
-    position: absolute;
-    bottom: 90px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 #stopAnimationButton {
-    width: 150px;
-    text-align: center;
-    color: #FFD203;
-    border: white solid 1px;
-    padding: 15px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 0.8em;
+  width: 150px;
+  text-align: center;
+  color: #ffd203;
+  border: white solid 1px;
+  padding: 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.8em;
 }
 
 #stopAnimationButton:hover {
-    background-color: #FFD203;
-    color: black;
-    border-color: #FFD203;
+  background-color: #ffd203;
+  color: black;
+  border-color: #ffd203;
 }
-
 
 /* css section siège avec la tranche d'âge */
 h3 {
-    font-size: 2em;
-    margin: 0;
-    margin-left: 20px;
+  font-size: 2em;
+  margin: 0;
+  margin-left: 20px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fauteuil {
-    margin: 0;
-    font-size: 1.2em;
-    color: #FFD203;
+  margin: 0;
+  font-size: 1.2em;
+  color: #ffd203;
 }
 
 /* css boutons sièges */
 
 .contBtn {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
 .age-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .siege {
-    height: 40px;
-    margin: 10px;
-    pointer-events: none;
+  max-height: 40px;
+  margin: 10px;
+  pointer-events: none;
 }
 
 /* css svg */
 
-.salle {
-    position: relative;
-    width: 80%;
-    height: 70%;
-}
-
-
 svg {
-    width: 1080px;
-    height: 580px;
-
-    border: white solid 1px;
-    position: absolute;
-    top: 80%;
-    left: 70%;
-    transform: translate(-60%, -65%);
+  width: 1080px;
+  height: 580px;
+  border: white solid 1px;
 }
 
 #percentage-display {
-    position: absolute;
-    top: 0;
-    left: 300px;
-
-    font-weight: 500;
+  font-size: 1.2em;
+  font-weight: 500;
+  max-width: 900px;
+  text-align: center;
 }
 
 /* css section map et infos */
 
 .containerMap {
-    display: flex;
-    position: relative;
-}
-
-.limitation {
-    width: 100%;
-    height: 100%;
+  margin-top: 300px;
+  display: flex;
+  position: relative;
 }
 
 #earth {
-    width: 50%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.7889749649859944) 12%, rgba(255, 66, 0, 0.6209077380952381) 26%, rgba(0, 0, 0, 0.8786108193277311) 68%);
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.7889749649859944) 12%,
+    rgba(255, 66, 0, 0.6209077380952381) 26%,
+    rgba(0, 0, 0, 0.8786108193277311) 68%
+  );
+}
+.positionnement {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
 
+.positionnement h3 {
+  text-align: right;
 }
 
 .marker-info {
-    position: absolute;
-    right: 0;
-    top: 50;
+  position: absolute;
+  right: 0;
+}
+
+.sousConsigne {
+  font-size: 1.2em;
+  text-align: right;
 }
 
 .blocinfo {
-    margin-top: 150px;
-    margin-left: 300px;
+  margin-top: 150px;
+  margin-left: 200px;
 }
 
 #cine-nom {
-    font-size: 1.8em;
-    font-weight: 800;
-    margin: 0;
+  font-size: 1.8em;
+  font-weight: 800;
+  margin: 0;
 
-    padding-bottom: 10px;
-    border-bottom: #FF4200 solid 1px;
+  padding-bottom: 10px;
+  border-bottom: #ff4200 solid 1px;
 }
 
 #cine-pays,
 #cine-ville {
-    font-size: 0.9em;
-    display: inline;
+  font-size: 0.9em;
+  display: inline;
 }
 
 #cine-annee,
 #cine-info {
-    color: #FFD203;
+  color: #ffd203;
 }
 
 #cine-info {
-    width: 600px;
+  width: 600px;
 }
-
-
 
 /* css btn réinitialisation vue map */
 
 .reset {
-    cursor: pointer;
-    position: absolute;
-    left: 45%;
-    bottom: 100px;
-    text-align: right;
-
+  cursor: pointer;
+  position: absolute;
+  left: 45%;
+  bottom: 100px;
+  text-align: right;
 }
 
 #resetButton {
-    width: 150px;
-    text-align: center;
-    color: #FFD203;
-    border: white solid 1px;
-    padding: 15px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 0.8em;
+  width: 150px;
+  text-align: center;
+  color: #ffd203;
+  border: white solid 1px;
+  padding: 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.8em;
 }
 
 #resetButton:hover {
-    background-color: #FFD203;
-    color: black;
-    border-color: #FFD203;
+  background-color: #ffd203;
+  color: black;
+  border-color: #ffd203;
 }
-
 
 /* css footer mentions légales et crédits */
 
 footer {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h4 {
-    font-size: 7rem;
-    font-weight: 900;
-    color: #FFD203;
-    text-align: center;
-    margin: 0;
+  font-size: 7rem;
+  font-weight: 900;
+  color: #ffd203;
+  text-align: center;
+  margin: 0;
 }
 
 .ss-tt {
-    font-size: 1.2em;
-    font-weight: 500;
-    color: #FFD203;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #ffd203;
 }
 
 .container-footer {
-    display: flex;
+  display: flex;
 }
 
 li {
-    text-transform: uppercase;
-    list-style: none;
-
+  text-transform: uppercase;
+  list-style: none;
 }
 
 li a {
-    text-decoration: none;
-    color: white;
-    font-style: italic;
+  text-decoration: none;
+  color: white;
+  font-style: italic;
 }
 
 li a:hover {
-    color: #FFD203;
-    text-decoration: underline;
+  color: #ffd203;
+  text-decoration: underline;
 }
 
 .bloc {
-    width: 450px;
-    padding-right: 20px;
+  width: 450px;
+  padding-right: 20px;
 }
 
 .un,
 .deux {
-    border-right: white solid 1px;
+  border-right: white solid 1px;
 }
 
 .nm {
-    text-transform: capitalize;
-    list-style: circle;
+  text-transform: capitalize;
+  list-style: circle;
 }
 
 /* social media github */
 .git {
-    position: relative;
+  position: relative;
 }
 
-
 .icon {
-    display: inline-flex;
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-    font-size: 26px;
-    color: #fff;
-    border-radius: 50%;
-    outline: 2px solid #fff;
-    transition-property: outline-offset, outline-color, background-color;
-    transition-duration: 0.25s;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
 
-    position: absolute;
-    bottom: -60px;
-    right: 20px;
+  position: absolute;
+  bottom: -60px;
+  right: 20px;
 }
 
 .icon:hover {
-    outline-offset: 4px;
+  outline-offset: 4px;
 }
 
 .icon i {
-    margin: auto;
+  margin: auto;
 }
 
 .icon:hover i {
-    animation: shake 0.25s;
+  animation: shake 0.25s;
 }
 
 .icon--github:hover {
-    background-color: #FFD203;
-    outline-color: #FFD203;
+  background-color: #ffd203;
+  outline-color: #ffd203;
 }
 
 @keyframes shake {
-    10% {
-        transform: rotate(15deg);
-    }
+  10% {
+    transform: rotate(15deg);
+  }
 
-    20% {
-        transform: rotate(-15deg);
-    }
+  20% {
+    transform: rotate(-15deg);
+  }
 
-    30% {
-        transform: rotate(15deg);
-    }
+  30% {
+    transform: rotate(15deg);
+  }
 
-    40% {
-        transform: rotate(-15deg);
-    }
+  40% {
+    transform: rotate(-15deg);
+  }
 }
 
 /* viewport 768px*/
 
-
 @media (max-width: 900px) {
-    h2 {
-        font-size: 1.8em;
-    }
+  h2 {
+    font-size: 1.8em;
+  }
 
-    #info {
-        width: 310px;
-        font-size: 1.2em;
-        top: 100px;
-    }
+  #info {
+    width: 310px;
+    font-size: 1.2em;
+    top: 100px;
+  }
 
-    #complement {
-        width: 400px;
-        font-size: 1em;
-        padding-right: 10px;
-    }
+  #complement {
+    width: 400px;
+    font-size: 1em;
+    padding-right: 10px;
+  }
 
-    .consigne {
-        position: absolute;
-        right: 0;
-        width: 400px;
-    }
+  .consigne {
+    position: absolute;
+    right: 0;
+    width: 400px;
+  }
 }
-
-
 
 /* viewport 688px*/
 
-
 @media (max-width: 688px) {
-    h2 {
-        font-size: 1em;
-    }
+  h2 {
+    font-size: 1em;
+  }
 
-    #info {
-        width: 210px;
-        font-size: 0.8em;
-        top: 100px;
-    }
+  #info {
+    width: 210px;
+    font-size: 0.8em;
+    top: 100px;
+  }
 
-    #complement {
-        width: 400px;
-        font-size: 0.8em;
-        padding-right: 10px;
-    }
+  #complement {
+    width: 400px;
+    font-size: 0.8em;
+    padding-right: 10px;
+  }
 }

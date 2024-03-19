@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cineviz</title>
-    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg" />
 
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!-- Librairie Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
@@ -22,538 +26,1447 @@
     <script defer src="https://www.webglearth.com/v2/api.js"></script>
 
     <!-- CDN jquery scrollify  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
-        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.js"
-        integrity="sha512-2rSKyHme2mrplfIGsA8bFYAYddQ66qR+Dh71OrNZsZOtMdCYa8V1lJvl2mr/qzwcMIs20ddYz4JLiBmwS2K7Iw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.js"
+      integrity="sha512-2rSKyHme2mrplfIGsA8bFYAYddQ66qR+Dh71OrNZsZOtMdCYa8V1lJvl2mr/qzwcMIs20ddYz4JLiBmwS2K7Iw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-<body>
-
+  <body>
     <div class="loading">
-        <span class="loader"></span>
+      <span class="loader"></span>
     </div>
     <!-- Section introduction -->
     <div>
-        <img src="img/logo.svg" alt="" class="logo">
+      <img src="img/logo.svg" alt="" class="logo" />
     </div>
 
-    <section class="titre scrollify">
-        <h1>Cineviz</h1>
-        <p> Présente <span class="text"> <br> Un projet dataviz sur la frequentation des cinemas </span> </p>
-
+    <section class="titre">
+      <h1>Cineviz</h1>
+      <p>
+        Présente
+        <span class="text">
+          <br />
+          Un projet dataviz sur la frequentation des cinemas
+        </span>
+      </p>
     </section>
 
     <!-- Section fréquentation des salles de cinéma -->
-    <section class="frequentation scrollify">
+    <section class="frequentation">
+      <h2>Fréquentation des salles de cinéma en France de 1943 à 2022</h2>
 
-        <h2>Fréquentation des salles de cinéma en France de 1943 à 2022 </h2>
+      <div>
+        <canvas id="graph1"></canvas>
+      </div>
+      <div id="info">
+        <span id="currentCount"></span> millions d'entrées en
+        <span id="currentYear"></span>
+      </div>
+      <div id="complement"><span id="explication"></span></div>
 
-        <div>
-
-            <canvas id="graph1"></canvas>
-
-        </div>
-        <div id="info">
-            <span id="currentCount"></span> millions d'entrées en
-            <span id="currentYear"></span>
-        </div>
-        <div id="complement"><span id="explication"></span></div>
-
-        <p class="consigne"> Cliquez sur un point coloré du graphique affiché entièrement pour obtenir plus
-            d'informations. </p>
-
+      <div class="bloc-bas">
         <div class="btn" id="stopAnimationButton">Tout afficher</div>
+        <p class="consigne">
+          Cliquez sur un point coloré du graphique affiché entièrement pour
+          obtenir plus d'informations.
+        </p>
+      </div>
     </section>
 
     <!-- Section proportion âge public -->
 
-    <section class="scrollify">
+    <section>
+      <h3>Quel âge a le public français ?</h3>
 
-        <h3> Quel âge a le public français ?</h3>
-
-        <div class="container">
-            <p class="fauteuil">Sélection des fauteuils : </p>
-            <div class="contBtn">
-                <div id="btn-6-14" class="age-button"><img src="./img/yellow.svg" alt="" class="siege" id="test"> 6-14
-                </div>
-                <div id="btn-15-24" class="age-button"> <img src="./img/blue.svg" alt="" class="siege">15-24
-                </div>
-                <div id="btn-25-34" class="age-button"><img src="./img/green.svg" alt="" class="siege">25-34
-                </div>
-                <div id="btn-35-49" class="age-button"><img src="./img/pink.svg" alt="" class="siege">35-49
-                </div>
-                <div id="btn-50-59" class="age-button"><img src="./img/red.svg" alt="" class="siege">50-59
-                </div>
-                <div id="btn-60+" class="age-button"><img src="./img/marine.svg" alt="" class="siege">60+
-                </div>
-            </div>
+      <div class="container">
+        <p class="fauteuil">Sélection des fauteuils :</p>
+        <div class="contBtn">
+          <div id="btn-6-14" class="age-button">
+            <img src="./img/yellow.svg" alt="" class="siege" id="test" /> 6-14
+          </div>
+          <div id="btn-15-24" class="age-button">
+            <img src="./img/blue.svg" alt="" class="siege" />15-24
+          </div>
+          <div id="btn-25-34" class="age-button">
+            <img src="./img/green.svg" alt="" class="siege" />25-34
+          </div>
+          <div id="btn-35-49" class="age-button">
+            <img src="./img/pink.svg" alt="" class="siege" />35-49
+          </div>
+          <div id="btn-50-59" class="age-button">
+            <img src="./img/red.svg" alt="" class="siege" />50-59
+          </div>
+          <div id="btn-60+" class="age-button">
+            <img src="./img/marine.svg" alt="" class="siege" />60+
+          </div>
         </div>
 
+        <p id="percentage-display"></p>
+        <div>
+          <svg>
+            <!-- Définition de la forme personnalisée du siège dans la section <defs> -->
+            <defs>
+              <path
+                id="custom-seat"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.073 0C11.2297 0 9.73548 1.49425 9.73548 3.3375V9.62793H5.66988C2.53849 9.62793 0 12.1664 0 15.2978V36.8006C0 39.9319 2.53849 42.4704 5.66988 42.4704H41.4008C44.5322 42.4704 47.0707 39.9319 47.0707 36.8006V15.2978C47.0707 12.1664 44.5322 9.62793 41.4008 9.62793H37.443V3.3375C37.443 1.49425 35.9487 0 34.1055 0H13.073Z"
+              />
+            </defs>
 
-        <div class="salle">
+            <!-- Rangée 1 -->
+            <use
+              xlink:href="#custom-seat"
+              x="60"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="120"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="180"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-            <svg>
-                <!-- Définition de la forme personnalisée du siège dans la section <defs> -->
-                <defs>
-                    <path id="custom-seat" fill-rule="evenodd" clip-rule="evenodd"
-                        d="M13.073 0C11.2297 0 9.73548 1.49425 9.73548 3.3375V9.62793H5.66988C2.53849 9.62793 0 12.1664 0 15.2978V36.8006C0 39.9319 2.53849 42.4704 5.66988 42.4704H41.4008C44.5322 42.4704 47.0707 39.9319 47.0707 36.8006V15.2978C47.0707 12.1664 44.5322 9.62793 41.4008 9.62793H37.443V3.3375C37.443 1.49425 35.9487 0 34.1055 0H13.073Z" />
-                </defs>
+            <use
+              xlink:href="#custom-seat"
+              x="300"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="360"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="420"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="480"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="540"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="600"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="660"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="720"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="780"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="840"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="900"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="960"
+              y="60"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-                <!-- Rangée 1 -->
-                <use xlink:href="#custom-seat" x="60" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="120" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="180" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
+            <!-- Rangée 2 -->
+            <use
+              xlink:href="#custom-seat"
+              x="60"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="120"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="180"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
+            <use
+              xlink:href="#custom-seat"
+              x="300"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="360"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="420"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="480"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="540"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="600"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="660"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="720"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-                <use xlink:href="#custom-seat" x="300" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="360" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="420" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="480" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="540" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="600" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="660" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="720" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="780" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="840" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="900" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="960" y="60" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
+            <use
+              xlink:href="#custom-seat"
+              x="840"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="900"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="960"
+              y="120"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
+            <!-- Rangée 3 -->
+            <use
+              xlink:href="#custom-seat"
+              x="60"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="120"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="180"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-                <!-- Rangée 2 -->
-                <use xlink:href="#custom-seat" x="60" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="120" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="180" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
+            <use
+              xlink:href="#custom-seat"
+              x="300"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="360"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="420"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="480"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="540"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="600"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="660"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="720"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
+            <use
+              xlink:href="#custom-seat"
+              x="840"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="900"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="960"
+              y="180"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-                <use xlink:href="#custom-seat" x="300" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="360" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="420" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="480" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="540" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="600" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="660" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="720" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
+            <!-- Rangée 4 -->
+            <use
+              xlink:href="#custom-seat"
+              x="60"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="120"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="180"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
+            <use
+              xlink:href="#custom-seat"
+              x="300"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="360"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="420"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="480"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="540"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="600"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="660"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="720"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-                <use xlink:href="#custom-seat" x="840" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="900" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="960" y="120" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
+            <use
+              xlink:href="#custom-seat"
+              x="840"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="900"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="960"
+              y="240"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-                <!-- Rangée 3 -->
-                <use xlink:href="#custom-seat" x="60" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="120" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="180" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
+            <!-- Rangée 5 -->
+            <use
+              xlink:href="#custom-seat"
+              x="60"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="120"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="180"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
+            <use
+              xlink:href="#custom-seat"
+              x="300"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="360"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="420"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="480"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="540"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="600"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="660"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="720"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
+            <use
+              xlink:href="#custom-seat"
+              x="840"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="900"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="960"
+              y="300"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-                <use xlink:href="#custom-seat" x="300" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="360" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="420" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="480" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="540" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="600" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="660" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="720" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
+            <!-- Rangée 6 -->
+            <use
+              xlink:href="#custom-seat"
+              x="60"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="120"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="180"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
+            <use
+              xlink:href="#custom-seat"
+              x="300"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="360"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="420"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="480"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="540"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="600"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="660"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="720"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-                <use xlink:href="#custom-seat" x="840" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="900" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="960" y="180" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
+            <use
+              xlink:href="#custom-seat"
+              x="840"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="900"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="960"
+              y="360"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-                <!-- Rangée 4 -->
-                <use xlink:href="#custom-seat" x="60" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="120" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="180" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
+            <!-- Rangée 7 -->
+            <use
+              xlink:href="#custom-seat"
+              x="60"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="120"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="180"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
+            <use
+              xlink:href="#custom-seat"
+              x="300"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="360"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="420"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="480"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="540"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="600"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="660"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="720"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-                <use xlink:href="#custom-seat" x="300" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="360" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="420" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="480" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="540" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="600" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="660" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="720" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
+            <use
+              xlink:href="#custom-seat"
+              x="840"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="900"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="960"
+              y="420"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
 
-
-                <use xlink:href="#custom-seat" x="840" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="900" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="960" y="240" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-
-                <!-- Rangée 5 -->
-                <use xlink:href="#custom-seat" x="60" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="120" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="180" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-
-
-                <use xlink:href="#custom-seat" x="300" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="360" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="420" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="480" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="540" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="600" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="660" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="720" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-
-
-                <use xlink:href="#custom-seat" x="840" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="900" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="960" y="300" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-
-                <!-- Rangée 6 -->
-                <use xlink:href="#custom-seat" x="60" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="120" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="180" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-
-
-                <use xlink:href="#custom-seat" x="300" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="360" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="420" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="480" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="540" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="600" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="660" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="720" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-
-
-                <use xlink:href="#custom-seat" x="840" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="900" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="960" y="360" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-
-
-                <!-- Rangée 7 -->
-                <use xlink:href="#custom-seat" x="60" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="120" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="180" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-
-
-                <use xlink:href="#custom-seat" x="300" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="360" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="420" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="480" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="540" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="600" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="660" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="720" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-
-
-                <use xlink:href="#custom-seat" x="840" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="900" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="960" y="420" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-
-                <!-- Rangée 8 -->
-                <use xlink:href="#custom-seat" x="60" y="480" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="120" y="480" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="900" y="480" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-                <use xlink:href="#custom-seat" x="960" y="480" width="10" height="10" class="seat" fill="black"
-                    stroke="white" />
-            </svg>
-
-            <p id="percentage-display"> </p>
-
+            <!-- Rangée 8 -->
+            <use
+              xlink:href="#custom-seat"
+              x="60"
+              y="480"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="120"
+              y="480"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="900"
+              y="480"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+            <use
+              xlink:href="#custom-seat"
+              x="960"
+              y="480"
+              width="10"
+              height="10"
+              class="seat"
+              fill="black"
+              stroke="white"
+            />
+          </svg>
         </div>
-
-
+      </div>
     </section>
 
     <!-- Section map sur les premières salles de cinéma -->
 
-    <section class="containerMap scrollify">
-        <div class="limitation">
-            <div id="earth"></div>
+    <section class="containerMap">
+      <div id="earth"></div>
+
+      <div class="marker-info">
+        <div class="positionnement">
+          <h3>Découvrez un cinéma historique du pays de votre choix</h3>
+          <p class="sousConsigne">
+            Déplacez vous sur la map et cliquez sur un point pour découvrir le
+            premier cinéma du pays !
+          </p>
         </div>
-
-
-        <div class="marker-info">
-            <h3>Découvrez un cinéma historique du pays de votre choix</h3>
-            <p class="consigne"> Glissez la map et cliquez sur un point pour découvrir le premier cinéma du pays !</p>
-
-            <div class="blocinfo">
-                <p id="cine-ville"></p>
-                <p id="cine-pays"></p>
-                <p id="cine-nom"></p>
-                <p id="cine-annee"></p>
-                <p id="cine-info"></p>
-            </div>
+        <div class="blocinfo">
+          <p id="cine-ville"></p>
+          <p id="cine-pays"></p>
+          <p id="cine-nom"></p>
+          <p id="cine-annee"></p>
+          <p id="cine-info"></p>
         </div>
-        <div class="reset" id="resetButton"> Réinitialisation vue</div>
-
-
+      </div>
+      <div class="reset" id="resetButton">Réinitialisation vue</div>
     </section>
 
+    <section class="">
+      <div>
+        <h4>CINEVIZ</h4>
+      </div>
 
-    <section class="scrollify">
+      <div class="container-footer">
+        <div class="bloc un">
+          <ul>
+            <p class="ss-tt">Créatrices du site :</p>
+            <li>
+              Editrice____________________ Cécile Phan Nguyen & Diyana Balit
+            </li>
+            <br />
+            <li>
+              Contact___________________________
+              <a href="mailto:cecile.phan-nguyen@edu.univ-eiffel.fr">
+                Adresse mail
+              </a>
+            </li>
+            <br />
 
-        <div>
-            <h4> CINEVIZ </h4>
+            <li>
+              Création de l'habillage du site __________ Diyana Balit & Cécile
+              Phan Nguyen
+            </li>
+            <br />
+
+            <li>Développement web________________ Cécile Phan Nguyen</li>
+            <br />
+
+            <li>
+              Conception graphique__________________ Diyana Balit & Cécile Phan
+              Nguyen
+            </li>
+            <br />
+
+            <li>Récupération des données________ Cécile Phan Nguyen</li>
+            <br />
+            <li>
+              Hébergeur_____________________
+              <a
+                href="https://github.com/"
+                target="_blank"
+                alt="lien vers Github "
+              >
+                Société Github</a
+              >
+            </li>
+          </ul>
+
+          <div class="git">
+            <a
+              href="https://github.com/cecilepn"
+              target="_blank"
+              rel="”noopener”"
+              alt="lien vers Github de Cécile Phan Nguyen"
+              class="icon icon--github"
+            >
+              <i class="ri-github-line"> </i>
+            </a>
+          </div>
         </div>
 
-        <div class="container-footer">
-            <div class="bloc un">
-                <ul>
-                    <p class="ss-tt">
-                        Créatrices du site :
-                    </p>
-                    <li>Editrice____________________
-                        Cécile Phan Nguyen & Diyana Balit
-                    </li>
-                    <br>
-                    <li> Contact___________________________
-                        <a href="mailto:cecile.phan-nguyen@edu.univ-eiffel.fr"> Adresse mail </a>
-                    </li>
-                    <br>
+        <div class="bloc deux">
+          <ul>
+            <p class="ss-tt">Adresse de l’hébergeur :</p>
+            <p>
+              88 Colin P. Kelly Jr Street, San Francisco, CA 94107 United States
+            </p>
 
-                    <li>Création de l'habillage du site __________
-                        Diyana Balit & Cécile Phan Nguyen
-                    </li>
-                    <br>
+            <p>
+              Le site est accessible gratuitement en tout lieu à tout
+              utilisateur ayant un accès à Internet. Tous les frais supportés
+              par l’Utilisateur pour accéder au service (matériel informatique,
+              logiciels, connexion Internet, etc.) sont à sa charge. Tout
+              événement dû à un cas de force majeure ayant pour conséquence un
+              dysfonctionnement du site ou serveur et sous réserve de toute
+              interruption ou modification en cas de maintenance, n’engage pas
+              la responsabilité de Cineviz. Dans ces cas, l’Utilisateur accepte
+              ainsi ne pas tenir rigueur à l’éditeur de toute interruption ou
+              suspension de service, même sans préavis.
+            </p>
 
-                    <li>
-                        Développement web________________
-                        Cécile Phan Nguyen
-                    </li>
-                    <br>
-
-                    <li>Conception graphique__________________
-                        Diyana Balit & Cécile Phan Nguyen
-                    </li>
-                    <br>
-
-                    <li> Récupération des données________
-                        Cécile Phan Nguyen
-                    </li>
-                    <br>
-                    <li> Hébergeur_____________________
-                        <a href="https://github.com/" target="_blank" alt="lien vers Github "> Société
-                            Github</a>
-                    </li>
-
-                </ul>
-
-                <div class="git"><a href="https://github.com/cecilepn" target="_blank" rel=”noopener”
-                        alt="lien vers Github de Cécile Phan Nguyen" class="icon icon--github">
-                        <i class="ri-github-line"> </i>
-                    </a> </div>
-
-            </div>
-
-            <div class="bloc deux">
-                <ul>
-
-                    <p class="ss-tt">
-                        Adresse de l’hébergeur :
-                    </p>
-                    <p>88 Colin P. Kelly Jr Street, San Francisco, CA 94107 United States
-                    </p>
-
-                    <p>Le site est accessible gratuitement en tout lieu à tout utilisateur ayant un
-                        accès à Internet. Tous les frais supportés par l’Utilisateur pour accéder au service
-                        (matériel
-                        informatique, logiciels, connexion Internet, etc.) sont à sa charge.
-                        Tout événement dû à un cas de force majeure ayant pour conséquence un dysfonctionnement du
-                        site
-                        ou serveur et sous réserve de toute interruption ou modification en cas de maintenance,
-                        n’engage
-                        pas la responsabilité de Cineviz. Dans ces cas, l’Utilisateur accepte ainsi ne pas tenir
-                        rigueur
-                        à l’éditeur de toute interruption ou suspension de service, même sans préavis.
-                    </p>
-
-                    <p class="ss-tt">Non-application du RGPD :
-                    </p>
-                    <p>
-                        Le Règlement général sur la protection des données (RGPD) ne s’applique pas à notre site
-                        Cineviz.
-                        Nous traitons les données conformément aux lois en vigueur, mais les dispositions
-                        spécifiques du
-                        RGPD ne s’appliquent pas.
-                    </p>
-                </ul>
-
-
-            </div>
-            <div class="bloc trois">
-                <ul>
-                    <p class="ss-tt"> Sources data & crédits : </p>
-                    <li> Section introduction_____________ <a href="https://cssloaders.github.io/" target="_blank"
-                            alt="site githubio"> CSS Loader </a>
-                    </li>
-                    <li> Section fréquentation_____________ <a
-                            href="https://www.cnc.fr/recherche?keywords=fr%C3%A9quentation+des+salles+de+cin%C3%A9ma"
-                            target="_blank" alt="site CNC"> CNC </a> & <a
-                            href="https://www.senat.fr/themes/rapports-culture.html"> Sénat </a> </li>
-                    <li class="nm"> CNC - <a
-                            href="https://www.acap-cinema.com/wp-content/uploads/2021/04/evolution-de-la-frequentation-cinematographique.pdf"
-                            target="_blank" alt="lien vers"> "Evolution de la fréquentation cinématographique en France
-                            depuis 1945"
-                        </a></li>
-                    <li class="nm">CNC - <a href="https://www.cnc.fr/cinema/etudes-et-rapports/bilans" target="_blank">
-                            Bilans
-                            cinéma </a></li>
-
-                    <li class="nm">Sénat - <a href="https://www.senat.fr/rap/r02-308/r02-3081.html" target="_blank">
-                            "L'évolution du secteur de l'exploitation cinématographique" </a></li>
-                    <li class="nm"> Wikipédia - <a
-                            href="https://fr.wikipedia.org/wiki/Fr%C3%A9quentation_cin%C3%A9matographique"
-                            target="_blank" alt="site wikipédia"> "Fréquentation cinématographique"</a></li>
-
-                    <li class="nm"> Wikipédia - <a
-                            href="https://fr.wikipedia.org/wiki/Histoire_du_cin%C3%A9ma_fran%C3%A7ais#1975_%C3%A0_aujourd'hui_:_crise_et_renouveau_du_cin%C3%A9ma_fran%C3%A7ais"
-                            target="_blank" alt="site wikipedia">"Histoire du cinéma français"</a></li>
-
-                    <br>
-
-
-                    <li> Section âge public_____________ <a
-                            href="https://www.cnc.fr/recherche?keywords=fr%C3%A9quentation+des+salles+de+cin%C3%A9ma"
-                            target="_blank" alt="site CNC"> CNC </a></li>
-                    <li class="nm"> CNC - <a
-                            href="https://www.cnc.fr/documents/36995/156098/Evolution+du+public+des+salles+de+cinéma+%281993-2014%29.pdf/8d11a596-ddf0-13f2-a1a7-f22aeaa987be?t=1532442344080"
-                            target="_blank"> "Evolution du public des salles de cinéma (1993-2014)"
-                        </a></li>
-                    <li class="nm">CNC - <a href="https://www.cnc.fr/cinema/etudes-et-rapports/etudes-prospectives"
-                            target="_blank">
-                            Etudes prospectives cinéma </a></li>
-                    <li class="nm"> CNC - <a
-                            href="https://www.cnc.fr/professionnels/etudes-et-rapports/etudes-prospectives/le-public-du-cinema-en-2022_1986690"
-                            target="_blank"> "Le public du cinéma en 2022" </a></li>
-
-                    <li class="nm"> CNC - <a
-                            href="https://www.cnc.fr/documents/36995/153434/Bilan+2015+du+CNC.pdf/56fe5793-d0fc-bcf5-dc76-1274c5881b4e?t=1532442170560"
-                            target="_blank"> "Bilan 2015" </a></li>
-                    <br>
-
-                    <li> Section Map___________________<a href="https://examples.webglearth.com/" target="_blank"
-                            rel="noopener noreferrer">
-                            API Webglearth</a></li>
-                    <li class="nm"> Map API trouvé sur <a href="https://drissbenadjal.github.io/Dataviz/"
-                            target="_blank"> AstroViz</a>
-                        <br>
-                    <li class="nm"> Toutes les informations sur chaque premier cinéma de chaque pays du monde - <a
-                            href="" target="_blank">
-                            Wikipédia </a></li>
-
-                    <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">Contenu soumis à la licence
-                        CC-BY-SA 4.0</a>
-                </ul>
-            </div>
+            <p class="ss-tt">Non-application du RGPD :</p>
+            <p>
+              Le Règlement général sur la protection des données (RGPD) ne
+              s’applique pas à notre site Cineviz. Nous traitons les données
+              conformément aux lois en vigueur, mais les dispositions
+              spécifiques du RGPD ne s’appliquent pas.
+            </p>
+          </ul>
         </div>
+        <div class="bloc trois">
+          <ul>
+            <p class="ss-tt">Sources data & crédits :</p>
+            <li>
+              Section introduction_____________
+              <a
+                href="https://cssloaders.github.io/"
+                target="_blank"
+                alt="site githubio"
+              >
+                CSS Loader
+              </a>
+            </li>
+            <li>
+              Section fréquentation_____________
+              <a
+                href="https://www.cnc.fr/recherche?keywords=fr%C3%A9quentation+des+salles+de+cin%C3%A9ma"
+                target="_blank"
+                alt="site CNC"
+              >
+                CNC
+              </a>
+              &
+              <a href="https://www.senat.fr/themes/rapports-culture.html">
+                Sénat
+              </a>
+            </li>
+            <li class="nm">
+              CNC -
+              <a
+                href="https://www.acap-cinema.com/wp-content/uploads/2021/04/evolution-de-la-frequentation-cinematographique.pdf"
+                target="_blank"
+                alt="lien vers"
+              >
+                "Evolution de la fréquentation cinématographique en France
+                depuis 1945"
+              </a>
+            </li>
+            <li class="nm">
+              CNC -
+              <a
+                href="https://www.cnc.fr/cinema/etudes-et-rapports/bilans"
+                target="_blank"
+              >
+                Bilans cinéma
+              </a>
+            </li>
 
+            <li class="nm">
+              Sénat -
+              <a
+                href="https://www.senat.fr/rap/r02-308/r02-3081.html"
+                target="_blank"
+              >
+                "L'évolution du secteur de l'exploitation cinématographique"
+              </a>
+            </li>
+            <li class="nm">
+              Wikipédia -
+              <a
+                href="https://fr.wikipedia.org/wiki/Fr%C3%A9quentation_cin%C3%A9matographique"
+                target="_blank"
+                alt="site wikipédia"
+              >
+                "Fréquentation cinématographique"</a
+              >
+            </li>
 
+            <li class="nm">
+              Wikipédia -
+              <a
+                href="https://fr.wikipedia.org/wiki/Histoire_du_cin%C3%A9ma_fran%C3%A7ais#1975_%C3%A0_aujourd'hui_:_crise_et_renouveau_du_cin%C3%A9ma_fran%C3%A7ais"
+                target="_blank"
+                alt="site wikipedia"
+                >"Histoire du cinéma français"</a
+              >
+            </li>
+
+            <br />
+
+            <li>
+              Section âge public_____________
+              <a
+                href="https://www.cnc.fr/recherche?keywords=fr%C3%A9quentation+des+salles+de+cin%C3%A9ma"
+                target="_blank"
+                alt="site CNC"
+              >
+                CNC
+              </a>
+            </li>
+            <li class="nm">
+              CNC -
+              <a
+                href="https://www.cnc.fr/documents/36995/156098/Evolution+du+public+des+salles+de+cinéma+%281993-2014%29.pdf/8d11a596-ddf0-13f2-a1a7-f22aeaa987be?t=1532442344080"
+                target="_blank"
+              >
+                "Evolution du public des salles de cinéma (1993-2014)"
+              </a>
+            </li>
+            <li class="nm">
+              CNC -
+              <a
+                href="https://www.cnc.fr/cinema/etudes-et-rapports/etudes-prospectives"
+                target="_blank"
+              >
+                Etudes prospectives cinéma
+              </a>
+            </li>
+            <li class="nm">
+              CNC -
+              <a
+                href="https://www.cnc.fr/professionnels/etudes-et-rapports/etudes-prospectives/le-public-du-cinema-en-2022_1986690"
+                target="_blank"
+              >
+                "Le public du cinéma en 2022"
+              </a>
+            </li>
+
+            <li class="nm">
+              CNC -
+              <a
+                href="https://www.cnc.fr/documents/36995/153434/Bilan+2015+du+CNC.pdf/56fe5793-d0fc-bcf5-dc76-1274c5881b4e?t=1532442170560"
+                target="_blank"
+              >
+                "Bilan 2015"
+              </a>
+            </li>
+            <br />
+
+            <li>
+              Section Map___________________<a
+                href="https://examples.webglearth.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                API Webglearth</a
+              >
+            </li>
+            <li class="nm">
+              Map API trouvé sur
+              <a
+                href="https://drissbenadjal.github.io/Dataviz/"
+                target="_blank"
+              >
+                AstroViz</a
+              >
+              <br />
+            </li>
+
+            <li class="nm">
+              Toutes les informations sur chaque premier cinéma de chaque pays
+              du monde - <a href="" target="_blank"> Wikipédia </a>
+            </li>
+
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+              >Contenu soumis à la licence CC-BY-SA 4.0</a
+            >
+          </ul>
+        </div>
+      </div>
     </section>
-
 
     <script src="script.js"></script>
     <script type="module" src="./js/chart.js"></script>
     <script type="module" src="./js/cine.js"></script>
     <script type="module" src="./js/map.js"></script>
-
-
-</body>
-
+  </body>
 </html>

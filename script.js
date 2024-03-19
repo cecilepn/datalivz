@@ -18,11 +18,3 @@ window.onload = function () {
     }, 1000);
 }
 
-// Scrollify 
-
-$(function () {
-    $.scrollify({
-        section: ".scrollify",
-        scrollSpeed: 1500,
-    });
-});

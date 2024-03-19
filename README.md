@@ -20,7 +20,6 @@ Ce site présente :
 - JavaScript
 - Chart.js 
 - Webglearth.API 
-- jQuery : scrollify 
 
 # Visite 
 
